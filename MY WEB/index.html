@@ -1,0 +1,2627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>
+      Serene Sea Shipping - Your Trusted Freight Forwarding Partner in India
+    </title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      
+
+      function openTrackModal() {
+    document.getElementById("trackModal").classList.remove("hidden");
+    document.getElementById("trackingError").classList.add("hidden"); // reset error on open
+  }
+
+  function closeTrackModal() {
+    document.getElementById("trackModal").classList.add("hidden");
+    document.getElementById("trackingInput").value = ""; // clear input
+    document.getElementById("trackingError").classList.add("hidden"); // hide error on close
+  }
+
+  function checkTrackingNumber() {
+    const input = document.getElementById("trackingInput").value.trim();
+    const error = document.getElementById("trackingError");
+
+    // This condition just shows error if empty or too short.
+    if (!input || input.length < 5) {
+      error.classList.remove("hidden");
+    } else {
+      // Always showing error for now (you can later replace this with real tracking logic)
+      error.classList.remove("hidden");
+    }
+  }
+
+
+
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0f4c81", secondary: "#e67e22" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    
+   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+    <style>
+
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+  body {
+    top: 0px !important;
+  }
+  .goog-logo-link {
+    display: none !important;
+  }
+  .goog-te-gadget {
+    font-size: 0;
+  }
+  .goog-te-gadget select {
+    font-size: 14px;
+  }
+
+  
+.center-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+        z-index: 1000;
+        display: none;
+    }
+
+    .tracking-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+
+
+        /* Force input text color to black */
+  #trackModal input {
+    color: black !important;
+  }
+
+  /* Fix autofill (Chrome/WebKit) text color */
+  input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+      
+      
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Poppins', sans-serif;
+      }
+      .custom-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-size: 1.5em 1.5em;
+      }
+      
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      .custom-checkbox {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      }
+      .custom-checkbox input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+      .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+      background-color: #0f4c81;
+      border-color: #0f4c81;
+      }
+      .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+      display: block;
+      }
+      .custom-checkbox .checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .custom-switch {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 24px;
+      }
+      .custom-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+      .switch-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+      }
+      .switch-slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      }
+      .custom-switch input:checked + .switch-slider {
+      background-color: #0f4c81;
+      }
+      .custom-switch input:checked + .switch-slider:before {
+      transform: translateX(20px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+<!-- Top Header --> 
+<div class="bg-primary text-white py-2">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    
+    <!-- Left Side: Phone & Email -->
+    <div class="flex items-center space-x-4 text-sm">
+      
+      <!-- Phone -->
+      <div class="flex items-center">
+        <a
+          href="tel:+918980888809"
+          class="flex items-center hover:text-secondary transition"
+        >
+          <div class="w-4 h-4 flex items-center justify-center mr-1">
+            <i class="ri-phone-line"></i>
+          </div>
+          <span>+91 8980888809</span>
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-center">
+        <a
+          href="mailto:info@SereneSea.in"
+          class="flex items-center hover:text-secondary transition"
+        >
+          <div class="w-4 h-4 flex items-center justify-center mr-1">
+            <i class="ri-mail-line"></i>
+          </div>
+          <span>info@SereneSea.in</span>
+        </a>
+      </div>
+      
+    </div>
+        <div class="flex items-center space-x-4 text-sm">
+          <div class="flex items-center">
+            <div class="w-4 h-4 flex items-center justify-center mr-1">
+              <i class="ri-time-line"></i>
+            </div>
+            <span>MON - SAT  7:00 A.M - 12:00 P.M</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="https://wa.me/918980888809" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-whatsapp-fill"></i>
+              </div>
+            </a>
+            <a href="mailto:Info@SereneSea.in" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-mail-fill"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/company/serene-sea-shipping/" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <a href="#" class="mr-10"
+              ><img
+                src="https://static.readdy.ai/image/cf193dcb287cf1282d22687033aaf80f/c33d88492b7db220482f2808d6cecf62.png"
+                alt="Serene Sea Shipping"
+                class="h-16"
+            /></a>
+            <nav class="hidden md:flex space-x-8">
+            
+            
+             
+           
+              <button onclick="window.location.href='index.html'">Home</button>
+              <button onclick="window.location.href='services.html'">Services</button>
+              <button onclick="window.location.href='projectcargo.html'">Projects</button>
+    <button onclick="window.location.href='tracking.html'">Tracking</button>    
+    <button onclick="window.location.href='about.html'">About</button>
+    <button onclick="window.location.href='contact.html'">Contact</button>
+ 
+              
+              
+            </nav>
+            <div id="mobileMenu" class="fixed inset-0 bg-black/50 z-50 hidden">
+              <div
+                class="bg-white h-full w-4/5 max-w-sm p-6 transform transition-transform duration-300 -translate-x-full"
+                id="mobileMenuContent"
+              >
+                <div class="flex justify-between items-center mb-8">
+                  <a href="#" class="font-['Pacifico'] text-primary text-2xl"
+                    >Serene Sea</a
+                  >
+                  <button id="closeMobileMenu" class="text-gray-500">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                      <i class="ri-close-line text-xl"></i>
+                    </div>
+                  </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                  <a
+                    href="#"
+                    class="text-primary font-medium py-2 border-b border-gray-100"
+                    >Home</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                    >Services</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                    >Tracking</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                    >About Us</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                    >Contact</a
+                  >
+                </nav>
+                <div class="mt-8">
+                  <button
+                    class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center justify-center"
+                  >
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-file-list-3-line"></i>
+                    </div>
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <select onchange="translateLanguage(this.value)"
+              class="custom-select pr-8 py-2 pl-3 border border-gray-300 rounded-button text-gray-700 bg-white text-sm">
+              <option value="English">English</option>
+<option value="Hindi">Hindi</option>
+<option value="Spanish">Spanish</option>
+<option value="French">French</option>
+<option value="Chinese (Simplified)">Chinese</option>
+
+            </select>
+            
+            </div>
+            <button 
+            onclick="openQuoteModal()"
+            class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center"
+          >
+            <div class="w-4 h-4 flex items-center justify-center mr-1">
+              <i class="ri-file-list-3-line"></i>
+            </div>
+            Get Quote
+          </button>
+          
+
+                      <!-- Get Quote Modal -->
+          <div
+          id="quoteModal"
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300"
+          onclick="handleQuoteOutsideClick(event)"
+          >
+          <div
+            id="quoteModalContent"
+            class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative transform scale-95 transition-transform duration-300"
+            onclick="event.stopPropagation()"
+          >
+            <!-- Close Button -->
+            <button
+              onclick="closeQuoteModal()"
+              class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl font-bold"
+            >
+              &times;
+            </button>
+          
+            <!-- Modal Heading -->
+            <h3 class="text-2xl font-bold mb-4">Get a Quote</h3>
+          
+            <!-- Form -->
+            <form id="quoteForm" class="space-y-4" novalidate>
+              <div>
+                <label for="quoteName" class="block text-sm font-medium mb-1">Name</label>
+                <input type="text" id="quoteName" name="name" required class="w-full border border-gray-300 rounded px-4 py-2" />
+              </div>
+              <div>
+                <label for="quoteEmail" class="block text-sm font-medium mb-1">Email</label>
+                <input type="email" id="quoteEmail" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+              </div>
+              <div>
+                <label for="quotePhone" class="block text-sm font-medium mb-1">Phone</label>
+                <input type="tel" id="quotePhone" name="phone" class="w-full border border-gray-300 rounded px-4 py-2" />
+              </div>
+              <div>
+                <label for="quoteService" class="block text-sm font-medium mb-1">Service Type</label>
+                <select id="quoteService" name="service" class="w-full border border-gray-300 rounded px-4 py-2">
+                  <option value="">Select a service</option>
+                  <option>Land Transport</option>
+                  <option>Sea Freight</option>
+                  <option>Air Freight</option>
+                  <option>Warehousing</option>
+                </select>
+              </div>
+              <div>
+                <label for="quoteMessage" class="block text-sm font-medium mb-1">Message</label>
+                <textarea id="quoteMessage" name="message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+              </div>
+              <button type="submit" class="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition">
+                Submit Quote Request
+              </button>
+            </form>
+          
+            <!-- Thank You Message -->
+            <div id="quoteThankYou" class="hidden text-center">
+              <h4 class="text-xl font-semibold mb-2">Thank You!</h4>
+              <p class="text-gray-600">We've received your quote request. We'll get back to you shortly.</p>
+            </div>
+          </div>
+          </div>
+          <script>
+            const quoteModal = document.getElementById('quoteModal');
+            const quoteModalContent = document.getElementById('quoteModalContent');
+            const quoteForm = document.getElementById('quoteForm');
+            const quoteThankYou = document.getElementById('quoteThankYou');
+          
+            function openQuoteModal() {
+              quoteModal.classList.remove('hidden');
+              setTimeout(() => {
+                quoteModal.classList.remove('opacity-0');
+                quoteModalContent.classList.remove('scale-95');
+              }, 10);
+            }
+          
+            function closeQuoteModal() {
+              quoteModal.classList.add('opacity-0');
+              quoteModalContent.classList.add('scale-95');
+              setTimeout(() => {
+                quoteModal.classList.add('hidden');
+                quoteForm.reset();
+                quoteForm.classList.remove('hidden');
+                quoteThankYou.classList.add('hidden');
+              }, 300);
+            }
+          
+            function handleQuoteOutsideClick(event) {
+              if (event.target === quoteModal) {
+                closeQuoteModal();
+              }
+            }
+          
+            // Form submit handler
+            quoteForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+          
+            const name = document.getElementById('quoteName').value.trim();
+            const email = document.getElementById('quoteEmail').value.trim();
+          
+            if (!name || !email) {
+              alert('Please fill in both your name and email.');
+              return;
+            }
+          
+            quoteForm.classList.add('hidden');
+            quoteThankYou.classList.remove('hidden');
+            setTimeout(() => {
+              closeQuoteModal();
+            }, 3000);
+          });
+          </script>
+          
+                    </div>
+                  </div>
+                </div>
+              </header>
+    <!-- Hero Section -->
+    <section
+      class="relative overflow-hidden"
+      style="background-image: url('https://public.readdy.ai/ai/img_res/49b563e3f20906abee6f86f8f54655f4.jpg'); background-size: cover;
+      background-position: center;
+      height: 409px;"> 
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"
+      ></div>
+      <div class="container mx-auto px-4 py-16 md:py-20 relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Global Freight Forwarding Partner Worldwide
+          </h1>
+          <p class="text-base md:text-lg mb-6 md:mb-10">
+            We provide comprehensive logistics solutions with a global network, ensuring your cargo reaches its destination safely, efficiently, and with the utmost care.
+
+
+          </p>
+          
+         <!-- BUTTONS -->
+<div class="flex flex-wrap gap-3 md:gap-4">
+  <!-- Track Shipment Button -->
+  <button onclick="openTrackModal()" class="bg-white text-primary px-4 py-2 rounded font-medium">
+    <i class="ri-search-line mr-2"></i> Track Shipment
+    
+  </button>
+  
+
+  <!-- Request Quote Button -->
+</a>
+<a href="services.html#service-inquiry" class="bg-secondary text-white py-3 px-6 !rounded-button font-medium flex items-center whitespace-nowrap hover:bg-secondary/90 transition">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+  
+<i class="ri-arrow-down-line"></i>
+</div>
+    Request Quote
+  </a>
+</div>
+
+<!-- Track Shipment Modal -->
+<div
+  id="trackModal"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
+  onclick="closeTrackModal()"
+>
+  <div
+    class="bg-white p-6 rounded-xl w-full max-w-md relative shadow-lg"
+    onclick="event.stopPropagation()"
+  >
+    <button
+      class="absolute top-2 right-2 text-gray-600 hover:text-black text-2xl font-bold"
+      onclick="closeTrackModal()"
+    >
+      &times;
+    </button>
+
+    <h2 class="text-xl font-semibold mb-4">Track Shipment</h2>
+    <form onsubmit="event.preventDefault(); handleTrackShipment();">
+      <label for="tracking-number" class="block text-gray-700 mb-2">Tracking Number</label>
+      <input
+        type="text"
+        id="tracking-number"
+        name="tracking-number"
+        placeholder="Enter your tracking number"
+        class="w-full border border-gray-300 rounded px-3 py-2 mb-2"
+        required
+      />
+      <p id="error-message" class="text-red-500 text-sm mb-4 hidden">Invalid tracking number. Please try again.</p>
+      <button
+        type="submit"
+        class="bg-primary text-white px-4 py-2 rounded hover:bg-primary/90"
+      >
+        Track
+      </button>
+    </form>
+  </div>
+</div>
+
+    
+        </div>
+      </div>
+    </section>
+    <script>
+      function openTrackModal() {
+        const modal = document.getElementById("trackModal");
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+        }
+      }
+    
+      function closeTrackModal() {
+        const modal = document.getElementById("trackModal");
+        if (modal) {
+          modal.classList.remove("flex");
+          modal.classList.add("hidden");
+        }
+      }
+    
+      function handleTrackShipment() {
+        const input = document.getElementById("tracking-number");
+        const trackingNumber = input.value.trim();
+        const errorMessage = document.getElementById("error-message");
+    
+        if (trackingNumber === "") {
+          errorMessage.textContent = "Please enter a tracking number.";
+          errorMessage.classList.remove("hidden");
+        } else {
+          errorMessage.textContent = "Invalid tracking number. Please try again.";
+          errorMessage.classList.remove("hidden");
+          input.value = ""; // ✅ Clears the input after showing the error
+        }
+      }
+    </script>
+    
+    
+    
+    
+   <!-- Container for Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <!-- Track Shipment -->
+  <div class="bg-white p-6 rounded-lg shadow-lg border">
+    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+      <i class="ri-ship-line ri-lg text-primary"></i>
+    </div>
+    <h3 class="text-xl font-semibold mb-2">Track Shipment</h3>
+    <p class="text-gray-600 mb-4">Enter your tracking number to get real-time updates on your shipment status.</p>
+    <div class="flex">
+      <input type="number" id="trackingNumber" placeholder="Enter tracking number"
+        class="flex-grow px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary/30" />
+      <button onclick="trackShipment()"
+        class="bg-primary text-white px-4 py-2 rounded-r-md hover:bg-primary/90 transition">
+        Track
+      </button>
+    </div>
+    <p id="trackingMessage" class="text-sm text-gray-500 mt-2"></p>
+  </div>
+  <script>
+    function trackShipment() {
+      const number = document.getElementById("trackingNumber").value.trim();
+      if (!number) {
+        document.getElementById("trackingMessage").textContent = "Please enter a tracking number.";
+        return;
+      }
+      window.location.href = `index.html?tracking-number=${encodeURIComponent(number)}`;
+    }
+  </script>
+  
+
+      <!-- Get Rate Estimate Button -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+        <div
+          class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+        >
+          <div
+            class="w-7 h-7 flex items-center justify-center text-primary"
+          >
+            <i class="ri-calculator-line ri-lg"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Calculate Rates</h3>
+        <p class="text-gray-600 mb-4">
+          Get instant freight rate estimates for your shipments across the
+          globe.
+        </p>  
+        <button
+          id="openRateModal"
+          class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center justify-center"
+            >
+              <div class="w-5 h-5 flex items-center justify-center mr-1">
+                <i class="ri-money-dollar-circle-line"></i>
+              </div>
+              Get Rate Estimate 
+            </button>
+          </div>
+      
+      <!-- Rate Estimate Modal -->
+      <div
+        id="rateModal"
+        class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden"
+      >
+        <div
+          class="bg-white rounded-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto"
+        >
+          <div class="p-6 border-b border-gray-200">
+            <div class="flex justify-between items-center">
+              <h3 class="text-2xl font-bold text-gray-800">
+                Freight Rate Estimate
+              </h3>
+              <button
+                id="closeRateModal"
+                class="text-gray-500 hover:text-gray-700"
+              >
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-close-line ri-lg"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="p-6">
+            <form id="rateEstimateForm" class="space-y-6">
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-4">
+                  Shipment Details
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="originCountry" class="block text-gray-700 mb-2"
+                      >Origin Country *</label
+                    >
+                    <input
+                      type="text"
+                      id="originCountry"
+                      name="originCountry"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="Select origin country"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="destinationCountry" class="block text-gray-700 mb-2"
+                      >Destination Country *</label
+                    >
+                    <input
+                      type="text"
+                      id="destinationCountry"
+                      name="destinationCountry"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="Select destination country"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="shipmentWeight" class="block text-gray-700 mb-2"
+                      >Total Weight (kg) *</label
+                    >
+                    <input
+                      type="number"
+                      id="shipmentWeight"
+                      name="shipmentWeight"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="e.g. 100"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="shipmentDimensions" class="block text-gray-700 mb-2"
+                      >Dimensions (L x W x H in cm)</label
+                    >
+                    <input
+                      type="text"
+                      id="shipmentDimensions"
+                      name="shipmentDimensions"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="e.g. 30 x 20 x 15"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-4">
+                  Shipping Preferences
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="shippingMode" class="block text-gray-700 mb-2"
+                      >Shipping Mode *</label
+                    >
+                    <div class="relative">
+                      <select
+                        id="shippingMode"
+                        name="shippingMode"
+                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary appearance-none pr-8"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Select shipping mode
+                        </option>
+                        <option value="air">Air Freight</option>
+                        <option value="sea">Sea Freight</option>
+                        <option value="land">Land Freight</option>
+                        <option value="express">Express Delivery</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                      >
+                        <i class="ri-arrow-down-s-line text-gray-500"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="cargoType" class="block text-gray-700 mb-2"
+                      >Cargo Type *</label
+                    >
+                    <div class="relative">
+                      <select
+                        id="cargoType"
+                        name="cargoType"
+                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary appearance-none pr-8"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Select cargo type
+                        </option>
+                        <option value="general">General Cargo</option>
+                        <option value="perishable">Perishable Goods</option>
+                        <option value="hazardous">Hazardous Materials</option>
+                        <option value="fragile">Fragile Items</option>
+                        <option value="oversized">Oversized Cargo</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                      >
+                        <i class="ri-arrow-down-s-line text-gray-500"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-4">
+                  Contact Information
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="rateName" class="block text-gray-700 mb-2"
+                      >Full Name *</label
+                    >
+                    <input
+                      type="text"
+                      id="rateName"
+                      name="rateName"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="John Smith"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="rateEmail" class="block text-gray-700 mb-2"
+                      >Email Address *</label
+                    >
+                    <input
+                      type="email"
+                      id="rateEmail"
+                      name="rateEmail"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <div id="rateFormMessage" class="hidden p-4 rounded"></div>
+              
+              <div class="flex justify-end space-x-4">
+                <button
+                  type="button"
+                  id="cancelRateBtn"
+                  class="px-6 py-2 border border-gray-300 text-gray-700 font-medium !rounded-button whitespace-nowrap"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  id="submitRateBtn"
+                  class="bg-primary text-white px-6 py-2 font-medium !rounded-button whitespace-nowrap flex items-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mr-2"
+                    id="rateSubmitIcon"
+                  >
+                    <i class="ri-calculator-line"></i>
+                  </div>
+                  <span id="rateSubmitText">Calculate Rates</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Schedule Pickup Button -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+        <div
+          class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+        >
+          <div
+            class="w-7 h-7 flex items-center justify-center text-primary"
+          >
+            <i class="ri-calendar-check-line ri-lg"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Schedule Pickup</h3>
+        <p class="text-gray-600 mb-4">
+          Book a pickup for your shipment with our efficient and reliable
+          service.
+        </p>
+        <button
+          id="openPickupModal"
+          class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center justify-center"
+            >
+              <div class="w-5 h-5 flex items-center justify-center mr-1">
+                <i class="ri-truck-line"></i>
+              </div>
+              Schedule Now
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+      <!-- Pickup Schedule Modal -->
+      <div
+        id="pickupModal"
+        class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden"
+      >
+        <div
+          class="bg-white rounded-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto"
+        >
+          <div class="p-6 border-b border-gray-200">
+            <div class="flex justify-between items-center">
+              <h3 class="text-2xl font-bold text-gray-800">
+                Schedule a Pickup
+              </h3>
+              <button
+                id="closePickupModal"
+                class="text-gray-500 hover:text-gray-700"
+              >
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-close-line ri-lg"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="p-6">
+            <form id="pickupScheduleForm" class="space-y-6">
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-4">
+                  Pickup Details
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="pickupDate" class="block text-gray-700 mb-2"
+                      >Pickup Date *</label
+                    >
+                    <input
+                      type="date"
+                      id="pickupDate"
+                      name="pickupDate"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      min="<?php echo date('Y-m-d'); ?>"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="pickupTime" class="block text-gray-700 mb-2"
+                      >Pickup Time Window *</label
+                    >
+                    <div class="relative">
+                      <select
+                        id="pickupTime"
+                        name="pickupTime"
+                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary appearance-none pr-8"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Select time window
+                        </option>
+                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+                        <option value="evening">Evening (3 PM - 6 PM)</option>
+                        <option value="custom">Custom Time</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                      >
+                        <i class="ri-arrow-down-s-line text-gray-500"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="pickupAddress" class="block text-gray-700 mb-2"
+                      >Pickup Address *</label
+                    >
+                    <textarea
+                      id="pickupAddress"
+                      name="pickupAddress"
+                      rows="2"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="Full street address with postal code"
+                      required
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label for="pickupInstructions" class="block text-gray-700 mb-2"
+                      >Special Instructions</label
+                    >
+                    <textarea
+                      id="pickupInstructions"
+                      name="pickupInstructions"
+                      rows="2"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="Any special instructions for pickup"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-4">
+                  Shipment Information
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="shipmentItems" class="block text-gray-700 mb-2"
+                      >Number of Items *</label
+                    >
+                    <input
+                      type="number"
+                      id="shipmentItems"
+                      name="shipmentItems"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="e.g. 5"
+                      min="1"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="shipmentWeight" class="block text-gray-700 mb-2"
+                      >Total Weight (kg) *</label
+                    >
+                    <input
+                      type="number"
+                      id="shipmentWeight"
+                      name="shipmentWeight"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="e.g. 100"
+                      min="0.1"
+                      step="0.1"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="text-lg font-medium text-gray-800 mb-4">
+                  Contact Information
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="pickupName" class="block text-gray-700 mb-2"
+                      >Full Name *</label
+                    >
+                    <input
+                      type="text"
+                      id="pickupName"
+                      name="pickupName"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="John Smith"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="pickupEmail" class="block text-gray-700 mb-2"
+                      >Email Address *</label
+                    >
+                    <input
+                      type="email"
+                      id="pickupEmail"
+                      name="pickupEmail"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="pickupPhone" class="block text-gray-700 mb-2"
+                      >Phone Number *</label
+                    >
+                    <input
+                      type="tel"
+                      id="pickupPhone"
+                      name="pickupPhone"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="+91 98765 43210"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="pickupCompany" class="block text-gray-700 mb-2"
+                      >Company Name</label
+                    >
+                    <input
+                      type="text"
+                      id="pickupCompany"
+                      name="pickupCompany"
+                      class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                      placeholder="Your Company Ltd."
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <div id="pickupFormMessage" class="hidden p-4 rounded"></div>
+              
+              <div class="flex justify-end space-x-4">
+                <button
+                  type="button"
+                  id="cancelPickupBtn"
+                  class="px-6 py-2 border border-gray-300 text-gray-700 font-medium !rounded-button whitespace-nowrap"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  id="submitPickupBtn"
+                  class="bg-primary text-white px-6 py-2 font-medium !rounded-button whitespace-nowrap flex items-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mr-2"
+                    id="pickupSubmitIcon"
+                  >
+                    <i class="ri-calendar-event-line"></i>
+                  </div>
+                  <span id="pickupSubmitText">Schedule Pickup</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Rate Estimate Modal
+    const openRateModalBtn = document.getElementById("openRateModal");
+    const closeRateModalBtn = document.getElementById("closeRateModal");
+    const cancelRateBtn = document.getElementById("cancelRateBtn");
+    const rateModal = document.getElementById("rateModal");
+    const rateForm = document.getElementById("rateEstimateForm");
+    const submitRateBtn = document.getElementById("submitRateBtn");
+    const rateSubmitIcon = document.getElementById("rateSubmitIcon");
+    const rateSubmitText = document.getElementById("rateSubmitText");
+    const rateFormMessage = document.getElementById("rateFormMessage");
+    
+    // Open modal
+    openRateModalBtn.addEventListener("click", function () {
+      rateModal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    });
+    
+    // Close modal functions
+    function closeRateModal() {
+      rateModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      rateForm.reset();
+      rateFormMessage.classList.add("hidden");
+      document.querySelectorAll(".border-red-500").forEach((el) => {
+        el.classList.remove("border-red-500");
+        el.classList.add("border-gray-300");
+      });
+      document
+        .querySelectorAll(".rate-error-message")
+        .forEach((el) => el.remove());
+    }
+    
+    closeRateModalBtn.addEventListener("click", closeRateModal);
+    cancelRateBtn.addEventListener("click", closeRateModal);
+    
+    // Close when clicking outside the modal content
+    rateModal.addEventListener("click", function (e) {
+      if (e.target === rateModal) {
+        closeRateModal();
+      }
+    });
+    
+    // Form submission
+    rateForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      // Reset previous error states
+      rateFormMessage.classList.add("hidden");
+      document
+        .querySelectorAll(".rate-error-message")
+        .forEach((el) => el.remove());
+      document.querySelectorAll(".border-red-500").forEach((el) => {
+        el.classList.remove("border-red-500");
+        el.classList.add("border-gray-300");
+      });
+      
+      // Validate required fields
+      const requiredFields = {
+        originCountry: "Origin Country",
+        destinationCountry: "Destination Country",
+        shipmentWeight: "Shipment Weight",
+        shippingMode: "Shipping Mode",
+        cargoType: "Cargo Type",
+        rateName: "Full Name",
+        rateEmail: "Email Address"
+      };
+      
+      let isValid = true;
+      let errors = [];
+      
+      for (const [fieldId, fieldName] of Object.entries(requiredFields)) {
+        const field = document.getElementById(fieldId);
+        if (!field.value.trim()) {
+          isValid = false;
+          errors.push(fieldName);
+          field.classList.remove("border-gray-300");
+          field.classList.add("border-red-500");
+          const errorMsg = document.createElement("div");
+          errorMsg.className = "text-red-500 text-sm mt-1 rate-error-message";
+          errorMsg.textContent = `${fieldName} is required`;
+          field.parentNode.appendChild(errorMsg);
+        }
+      }
+      
+      // Email validation
+      const emailField = document.getElementById("rateEmail");
+      if (emailField.value.trim() && !isValidEmail(emailField.value)) {
+        isValid = false;
+        emailField.classList.remove("border-gray-300");
+        emailField.classList.add("border-red-500");
+        const errorMsg = document.createElement("div");
+        errorMsg.className = "text-red-500 text-sm mt-1 rate-error-message";
+        errorMsg.textContent = "Please enter a valid email address";
+        emailField.parentNode.appendChild(errorMsg);
+      }
+      
+      if (!isValid) {
+        rateFormMessage.textContent =
+          "Please fill in all required fields correctly.";
+        rateFormMessage.classList.remove(
+          "hidden",
+          "bg-green-100",
+          "text-green-800",
+        );
+        rateFormMessage.classList.add("bg-red-100", "text-red-800");
+        rateFormMessage.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+      
+      // Show loading state
+      submitRateBtn.disabled = true;
+      submitRateBtn.classList.add("opacity-75");
+      rateSubmitIcon.innerHTML = '<i class="ri-loader-4-line animate-spin"></i>';
+      rateSubmitText.textContent = "Calculating...";
+      
+      // Simulate form submission
+      setTimeout(() => {
+        // Show success message
+        rateFormMessage.textContent =
+          "Your rate estimate request has been processed. We've sent the estimated rates to your email address.";
+        rateFormMessage.classList.remove("hidden", "bg-red-100", "text-red-800");
+        rateFormMessage.classList.add("bg-green-100", "text-green-800", "p-4");
+        rateFormMessage.scrollIntoView({ behavior: "smooth" });
+        
+        // Reset button state
+        submitRateBtn.disabled = false;
+        submitRateBtn.classList.remove("opacity-75");
+        rateSubmitIcon.innerHTML = '<i class="ri-calculator-line"></i>';
+        rateSubmitText.textContent = "Calculate Rates";
+        
+        // Auto close after 5 seconds
+        setTimeout(() => {
+          closeRateModal();
+        }, 5000);
+      }, 2000);
+    });
+    
+    // Pickup Schedule Modal
+    const openPickupModalBtn = document.getElementById("openPickupModal");
+    const closePickupModalBtn = document.getElementById("closePickupModal");
+    const cancelPickupBtn = document.getElementById("cancelPickupBtn");
+    const pickupModal = document.getElementById("pickupModal");
+    const pickupForm = document.getElementById("pickupScheduleForm");
+    const submitPickupBtn = document.getElementById("submitPickupBtn");
+    const pickupSubmitIcon = document.getElementById("pickupSubmitIcon");
+    const pickupSubmitText = document.getElementById("pickupSubmitText");
+    const pickupFormMessage = document.getElementById("pickupFormMessage");
+    
+    // Open modal
+    openPickupModalBtn.addEventListener("click", function () {
+      pickupModal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    });
+    
+    // Close modal functions
+    function closePickupModal() {
+      pickupModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      pickupForm.reset();
+      pickupFormMessage.classList.add("hidden");
+      document.querySelectorAll(".border-red-500").forEach((el) => {
+        el.classList.remove("border-red-500");
+        el.classList.add("border-gray-300");
+      });
+      document
+        .querySelectorAll(".pickup-error-message")
+        .forEach((el) => el.remove());
+    }
+    
+    closePickupModalBtn.addEventListener("click", closePickupModal);
+    cancelPickupBtn.addEventListener("click", closePickupModal);
+    
+    // Close when clicking outside the modal content
+    pickupModal.addEventListener("click", function (e) {
+      if (e.target === pickupModal) {
+        closePickupModal();
+      }
+    });
+    
+    // Form submission
+    pickupForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      // Reset previous error states
+      pickupFormMessage.classList.add("hidden");
+      document
+        .querySelectorAll(".pickup-error-message")
+        .forEach((el) => el.remove());
+      document.querySelectorAll(".border-red-500").forEach((el) => {
+        el.classList.remove("border-red-500");
+        el.classList.add("border-gray-300");
+      });
+      
+      // Validate required fields
+      const requiredFields = {
+        pickupDate: "Pickup Date",
+        pickupTime: "Pickup Time Window",
+        pickupAddress: "Pickup Address",
+        shipmentItems: "Number of Items",
+        shipmentWeight: "Shipment Weight",
+        pickupName: "Full Name",
+        pickupEmail: "Email Address",
+        pickupPhone: "Phone Number"
+      };
+      
+      let isValid = true;
+      let errors = [];
+      
+      for (const [fieldId, fieldName] of Object.entries(requiredFields)) {
+        const field = document.getElementById(fieldId);
+        if (!field.value.trim()) {
+          isValid = false;
+          errors.push(fieldName);
+          field.classList.remove("border-gray-300");
+          field.classList.add("border-red-500");
+          const errorMsg = document.createElement("div");
+          errorMsg.className = "text-red-500 text-sm mt-1 pickup-error-message";
+          errorMsg.textContent = `${fieldName} is required`;
+          field.parentNode.appendChild(errorMsg);
+        }
+      }
+      
+      // Email validation
+      const emailField = document.getElementById("pickupEmail");
+      if (emailField.value.trim() && !isValidEmail(emailField.value)) {
+        isValid = false;
+        emailField.classList.remove("border-gray-300");
+        emailField.classList.add("border-red-500");
+        const errorMsg = document.createElement("div");
+        errorMsg.className = "text-red-500 text-sm mt-1 pickup-error-message";
+        errorMsg.textContent = "Please enter a valid email address";
+        emailField.parentNode.appendChild(errorMsg);
+      }
+      
+      
+      
+      // Show loading state
+      submitPickupBtn.disabled = true;
+      submitPickupBtn.classList.add("opacity-75");
+      pickupSubmitIcon.innerHTML = '<i class="ri-loader-4-line animate-spin"></i>';
+      pickupSubmitText.textContent = "Scheduling...";
+      
+      // Simulate form submission
+      setTimeout(() => {
+        // Show success message
+        pickupFormMessage.textContent =
+          "Your pickup has been scheduled successfully! You'll receive a confirmation email with all the details.";
+        pickupFormMessage.classList.remove("hidden", "bg-red-100", "text-red-800");
+        pickupFormMessage.classList.add("bg-green-100", "text-green-800", "p-4");
+        pickupFormMessage.scrollIntoView({ behavior: "smooth" });
+        
+        // Reset button state
+        submitPickupBtn.disabled = false;
+        submitPickupBtn.classList.remove("opacity-75");
+        pickupSubmitIcon.innerHTML = '<i class="ri-calendar-event-line"></i>';
+        pickupSubmitText.textContent = "Schedule Pickup";
+        
+        // Auto close after 5 seconds
+        setTimeout(() => {
+          closePickupModal();
+        }, 5000);
+      }, 2000);
+    });
+    
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
+    function isValidPhone(phone) {
+      const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/;
+      return phoneRegex.test(phone);
+    }
+  });
+</script>
+    <!-- Main Services Showcase -->
+    <section class="py-10 md:py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 md:mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-primary">
+            Our Comprehensive Services
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+            We offer end-to-end logistics solutions tailored to meet your
+            specific shipping requirements across all major trade lanes.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+        >
+          <!-- Sea Freight -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-ship-line"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Ocean Freight</h3>
+            <p class="text-gray-600 mb-4">
+              Reliable ocean freight services for FCL and LCL shipments with
+              competitive transit times and rates.
+            </p>
+            <a
+              href="services.html"
+              class="text-primary font-medium flex items-center hover:underline"
+            >
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+          <!-- Air Freight -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-plane-line"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Air Freight</h3>
+            <p class="text-gray-600 mb-4">
+              Express and standard air freight solutions for time-sensitive
+              cargo to destinations worldwide.
+            </p>
+            <a
+              href="airfreight.html"
+              class="text-primary font-medium flex items-center hover:underline"
+            >
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+          <!-- Customs Clearance -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-government-line"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Customs Clearance</h3>
+            <p class="text-gray-600 mb-4">
+              Expert customs brokerage services ensuring smooth and compliant
+              import/export procedures.
+            </p>
+            <a
+              href="customclearance.html"
+              class="text-primary font-medium flex items-center hover:underline"
+            >
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+          <!-- Warehousing -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-store-2-line"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Warehousing</h3>
+            <p class="text-gray-600 mb-4">
+              Secure storage facilities with inventory management systems across
+              major Indian cities.
+            </p>
+            <a
+              href="warehousing.html"
+              class="text-primary font-medium flex items-center hover:underline"
+            >
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+          <!-- Door-to-Door Delivery -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-truck-line"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Door-to-Door Delivery</h3>
+            <p class="text-gray-600 mb-4">
+              Complete logistics solutions from pickup at origin to final
+              delivery at destination.
+            </p>
+            <a
+              href="landtransport.html"
+              class="text-primary font-medium flex items-center hover:underline"
+            >
+              View Service Details
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+            </a>
+          </div>
+          <!-- Project Cargo -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center text-primary"
+              >
+                <i class="ri-loader-4-line"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Project Cargo</h3>
+            <p class="text-gray-600 mb-4">
+              Specialized handling of oversized and heavy-lift cargo for
+              industrial and infrastructure projects.
+            </p>
+            <a
+              href="projectcargo.html"
+              class="text-primary font-medium flex items-center hover:underline"
+            >
+              Learn More
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="py-10 md:py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 md:mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">
+            Why Choose Serene Sea Shipping
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+            With decades of experience in the logistics industry, we deliver
+            exceptional service and value to our customers.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
+        >
+          <!-- Global Network -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-global-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Global Network</h3>
+            <p class="text-gray-600">
+              Extensive coverage across all major ports and cities worldwide,
+              ensuring seamless logistics operations globally.
+            </p>
+          </div>
+          <!-- 24/7 Customer Support -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-customer-service-2-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">24/7 Customer Support</h3>
+            <p class="text-gray-600">
+              Round-the-clock assistance from our dedicated team to address your
+              queries and provide timely updates.
+            </p>
+          </div>
+          <!-- Competitive Rates -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-money-dollar-circle-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Competitive Rates</h3>
+            <p class="text-gray-600">
+              Cost-effective shipping solutions with transparent pricing and no
+              hidden charges for maximum value.
+            </p>
+          </div>
+          <!-- Expert Team -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 text-center"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-team-line ri-lg"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+            <p class="text-gray-600">
+              Highly skilled professionals with extensive industry knowledge to
+              handle all your logistics requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- Leaflet CSS & JS (in your <head> if not already included) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Service Coverage Map -->
+<section class="py-10 md:py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-8 md:mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Our Global Network</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+        With strategic partnerships worldwide, we connect India to major global markets through efficient shipping routes.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-8">
+      <!-- Map -->
+      <div class="md:col-span-3">
+        <div id="tradeMap" class="rounded-lg overflow-hidden shadow-md h-[250px] md:h-[400px] relative z-10"></div>
+      </div>
+
+      <!-- Trade Lanes -->
+      <div class="md:col-span-2">
+        <div class="bg-white p-6 rounded-lg shadow-md h-full">
+          <h3 class="text-lg md:text-xl font-semibold mb-4">Major Trade Lanes</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - United States (East & West Coast)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Europe (UK, Germany, Netherlands)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Middle East (UAE, Saudi Arabia, Qatar)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Southeast Asia (Singapore, Malaysia, Thailand)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - East Asia (China, Japan, South Korea)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Australia & New Zealand</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Africa (South Africa, Kenya, Egypt)</span>
+            </li>
+          </ul>
+
+          <!-- Hidden Extra Routes -->
+          <ul class="space-y-3 mt-4 hidden" id="extraRoutes">
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - South America (Brazil, Argentina, Chile)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Russia & CIS Countries</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Central Asia (Kazakhstan, Uzbekistan)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+                <i class="ri-checkbox-circle-line"></i>
+              </div>
+              <span class="text-gray-700">India - Eastern Europe (Poland, Hungary, Romania)</span>
+            </li>
+          </ul>
+
+          <!-- Toggle Button -->
+          <div class="mt-6">
+            <button id="viewAllBtn"
+              onclick="toggleRoutes()"
+              class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center"
+            >
+              <div class="w-5 h-5 flex items-center justify-center mr-1">
+                <i class="ri-global-line"></i>
+              </div>
+              View All Routes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Toggle & Map Script -->
+<script>
+  function toggleRoutes() {
+    const extraRoutes = document.getElementById("extraRoutes");
+    const btn = document.getElementById("viewAllBtn");
+
+    if (extraRoutes.classList.contains("hidden")) {
+      extraRoutes.classList.remove("hidden");
+      btn.innerHTML = `<div class="w-5 h-5 flex items-center justify-center mr-1">
+        <i class="ri-eye-close-line"></i></div> Hide Routes`;
+    } else {
+      extraRoutes.classList.add("hidden");
+      btn.innerHTML = `<div class="w-5 h-5 flex items-center justify-center mr-1">
+        <i class="ri-global-line"></i></div> View All Routes`;
+    }
+  }
+
+  // Leaflet Map
+  const map = L.map('tradeMap').setView([20.5937, 78.9629], 2);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  const tradePoints = [
+    ["US", 37.0902, -95.7129],
+    ["UK", 51.509865, -0.118092],
+    ["Singapore", 1.3521, 103.8198],
+    ["UAE", 23.4241, 53.8478],
+    ["Germany", 51.1657, 10.4515],
+    ["Australia", -25.2744, 133.7751]
+  ];
+
+  tradePoints.forEach(([name, lat, lng]) => {
+    L.marker([lat, lng]).addTo(map).bindPopup(`India ↔ ${name}`);
+  });
+</script>
+
+<!-- Contact Section -->
+<section class="py-10 md:py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-8 md:mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Get In Touch</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+        Have questions about our services? Contact our team for personalized
+        assistance with your shipping needs.
+      </p>
+    </div>
+
+    <!-- Contact Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <!-- Contact Form (2/3 width on desktop) -->
+      <div class="md:col-span-2">
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-100">
+          <h3 class="text-xl md:text-2xl font-semibold mb-6">Send Us a Message</h3>
+          
+          <form id="contact-form" onsubmit="submitForm(event)">
+            <!-- Name & Email Row -->
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Full Name*</label>
+                <input type="text" id="name" name="name" required 
+                       class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2">Email Address*</label>
+                <input type="email" id="email" name="email" required 
+                       class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+              </div>
+            </div>
+            
+            <!-- Phone & Service Row -->
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" 
+                       class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+              </div>
+              <div>
+                <label for="service" class="block text-gray-700 mb-2">Service Interest</label>
+                <select id="service" name="service" 
+                        class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                  <option value="">Select a service</option>
+                  <option value="sea">Sea Freight</option>
+                  <option value="air">Air Freight</option>
+                  <option value="customs">Customs Clearance</option>
+                  <option value="warehousing">Warehousing</option>
+                  <option value="door">Door-to-Door Delivery</option>
+                  <option value="project">Project Cargo</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Message Field -->
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" 
+                        class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit"
+            class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center">
+              <div class="w-5 h-5 flex items-center justify-center mr-1">
+                <i class="ri-send-plane-line"></i>
+              </div>
+              Send Message
+            </button>
+          </form>
+
+          <!-- Success Message (hidden by default) -->
+          <div id="success-message" class="text-green-600 mt-4 hidden text-center">
+            <h3 class="font-semibold">Thank You!</h3>
+            <p>Your message has been sent successfully. We will get back to you shortly.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Information (1/3 width on desktop) -->
+      <div class="bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-100 h-full">
+        <h3 class="text-xl md:text-2xl font-semibold mb-6">Contact Information</h3>
+        
+        <div class="space-y-6">
+          <!-- Address -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="ri-map-pin-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900 mb-1">Head Office</h4>
+              <p class="text-gray-600 text-sm">
+                Tolani Chamber, Office no. 122, Near B.M Petrol Pump<br>
+                Gandhidham, Kutch-Gujarat 370201, India
+              </p>
+            </div>
+          </div>
+          
+          <!-- Phone -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="ri-phone-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900 mb-1">Phone</h4>
+              <p class="text-gray-600 text-sm">
+                +91 89808-88809 Sohit Ahir<br>
+                +91 99799-23477 Satish Ahir
+              </p>
+            </div>
+          </div>
+          
+          <!-- Email -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="ri-mail-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900 mb-1">Email</h4>
+              <p class="text-gray-600 text-sm">
+                info@SereneSea.in<br>
+                Cs@SereneSea.in
+              </p>
+            </div>
+          </div>
+          
+          <!-- Working Hours -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="ri-time-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-medium text-gray-900 mb-1">Working Hours</h4>
+              <p class="text-gray-600 text-sm">
+                Monday - Friday: 7:00 AM - 12:00 PM<br>
+                Saturday: 7:00 AM - 7:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript to Handle Form Submission -->
+<script>
+  function submitForm(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    // Clear form data
+    document.getElementById('contact-form').reset();
+
+    // Show the success message
+    document.getElementById('success-message').classList.remove('hidden');
+  }
+</script>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-10 md:pt-16 pb-6 md:pb-8">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-12"
+        >
+          <div>
+            <a href="#" class="mb-4 block font-['Pacifico'] text-white text-2xl"
+              >Serene Sea Shipping</a
+            >
+            <p class="text-gray-200 mb-6">
+              Your trusted freight forwarding partner with over 10+ years of
+              experience connecting India to the world through reliable shipping
+              solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://wa.me/918980888809"
+                class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-whatsapp-fill"></i>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/serene-sea-shipping/"
+                class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-linkedin-fill"></i>
+                </div>
+              </a>
+              <a
+                href="mailto:Info@SereneSea.in"
+                class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-mail-fill"></i>
+
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/serenesea.in?igsh=b3VzdWNleHF1ZzB4"
+                class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+              >
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-instagram-line"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-gray-400 hover:text-white transition">Services</a>
+                <li>
+                  <a href="tracking.html" class="text-gray-400 hover:text-white transition">Track Shipment</a> 
+                </li>
+                <li>
+                  <a href="services.html#service-inquiry" class="text-gray-400 hover:text-white transition">Request Quote</a> 
+                </li>
+              <li>
+                <a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="services.html" class="text-gray-400 hover:text-white transition">Ocean Freight</a>
+              </li>
+              <li>
+                <a href="airfreight.html" class="text-gray-400 hover:text-white transition">Air Freight</a>
+              </li>
+              <li>
+                <a href="landtransport.html" class="text-gray-400 hover:text-white transition">Land Transport</a>
+              </li>
+              <li>
+                <a href="warehousing.html" class="text-gray-400 hover:text-white transition">Warehousing</a>
+              </li>
+              <li>
+                <a href="customclearance.html" class="text-gray-400 hover:text-white transition">Customs Clearance</a>
+              </li>
+              <li>
+                <a href="projectcargo.html" class="text-gray-400 hover:text-white transition">Project Logistics </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+          
+            <p class="text-gray-200 mb-4">
+              Subscribe to our newsletter for the latest updates and offers.
+            </p>
+            <div class="flex mb-4">
+
+             
+      
+  <!-- Clean, minimal email input -->
+  <form id="subscribeForm" class="flex mb-4">
+  <input
+    type="email"
+    name="email"
+    placeholder="Your email address"
+    required
+    class="flex-1 bg-blue-800 bg-opacity-20 border border-blue text-white text-sm font-normal placeholder-white/70 rounded-l-button py-2 px-3 focus:outline-none focus:ring-2 focus:ring-white/20"
+  />
+
+  <!-- Matching button -->
+  <button
+    type="submit"
+    class="bg-white text-primary px-4 py-2 text-sm font-medium rounded-r-button hover:bg-gray-100 transition"
+  >
+
+    Subscribe
+  </button>
+</form>
+
+
+<!-- Track Shipment Modal -->
+<div id="trackModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50">
+  <div class="bg-white rounded-lg p-6 w-full max-w-md relative">
+    <!-- Close Button -->
+    <button onclick="closeTrackModal()" class="absolute top-3 right-4 text-gray-500 text-xl hover:text-black">&times;</button>
+
+    <!-- Modal Content -->
+    <h2 class="text-xl font-semibold mb-4">Track Shipment</h2>
+    
+    <input
+      type="text"
+      id="trackingInput"
+      placeholder="Enter Tracking Number"
+      class="w-full border rounded px-4 py-2 mb-2 bg-white placeholder-gray-500 text-black"
+    />
+
+    <!-- Error message -->
+    <p id="trackingError" class="text-red-600 text-sm mb-4 hidden">Incorrect Tracking Number</p>
+
+    <button
+      onclick="checkTrackingNumber()"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full"
+    >
+      Track
+    </button>
+  </div>
+</div>
+
+
+<script>
+
+function trackShipment() {
+        const trackingInput = document.getElementById("trackingNumber");
+        const trackingNumber = trackingInput.value.trim();
+        const messageDiv = document.getElementById("trackingMessage");
+
+        if (!trackingNumber || isNaN(trackingNumber)) {
+            messageDiv.textContent = "";
+            messageDiv.style.display = "block";
+        } else {
+            messageDiv.style.display = "none";
+            alert("Incorrect Tracking number : " + trackingNumber); color-red
+        }
+    }
+
+
+
+  function openTrackModal() {
+    document.getElementById("trackModal").classList.remove("hidden");
+    document.getElementById("trackModal").classList.add("flex");
+  }
+
+  function closeTrackModal() {
+    document.getElementById("trackModal").classList.add("hidden");
+    document.getElementById("trackModal").classList.remove("flex");
+  }
+</script>
+
+
+          
+              </button>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-x-10">
+                <div class="w-20 h-21 flex items-center justify-center text-white">
+                  <i class="ri-visa-fill ri-3x"></i>
+                </div>
+                <div class="w-4  h-20 flex items-center justify-center text-white">
+                  <i class="ri-mastercard-fill ri-3x"></i>
+                </div>
+                <div class="w-20 h-30 flex items-center justify-center text-white">
+                  <!-- Credit Card Icon -->
+                <i class="ri-bank-card-fill ri-3x"></i> 
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+              <div class="flex flex-col items-center">
+            <div class="w-14 h-14 flex items-center justify-center  square-full mb-2">
+              <i class="ri-verified-badge-line ri-3x"></i>
+              </div>
+              </div>
+              <div class="flex flex-col items-center">
+              <div class="w-14 h-14 flex items-center justify-center  suare-full mb-2">
+                <i class="ri-shield-check-line ri-3x"></i>
+              </div>
+            
+              </div>
+              <div class="flex flex-col items-center">
+              <div class="w-14 h-14 flex items-center justify-center  square-full mb-2">
+                <i class="ri-recycle-line ri-3x"></i>
+              </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/20 pt-6 md:pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-200 text-xs md:text-sm mb-4 md:mb-0">
+              © 2025 Serene Sea Shipping. All rights reserved.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 md:space-x-6">
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+
+
+function toggleRoutes() {
+    const extraRoutes = document.getElementById('extraRoutes');
+    const btn = document.getElementById('viewAllBtn');
+
+    if (extraRoutes.classList.contains('hidden')) {
+      extraRoutes.classList.remove('hidden');
+      btn.innerHTML = '<div class="w-5 h-5 flex items-center justify-center mr-1"><i class="ri-global-line"></i></div>View Fewer Routes';
+    } else {
+      extraRoutes.classList.add('hidden');
+      btn.innerHTML = '<div class="w-5 h-5 flex items-center justify-center mr-1"><i class="ri-global-line"></i></div>View All Routes';
+    }
+  }
+
+
+
+      // View All Routes Button Functionality
+  document.getElementById('viewRoutesBtn')?.addEventListener('click', function() {
+    const allRoutesSection = document.getElementById('allRoutesSection');
+    const button = this;
+    
+    // Toggle section visibility
+    allRoutesSection.classList.toggle('hidden');
+    
+    // Smooth scroll if showing
+    if (!allRoutesSection.classList.contains('hidden')) {
+      setTimeout(() => {
+        allRoutesSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 50);
+      button.textContent = 'Hide Routes';
+      button.classList.add('bg-gray-600');
+    } else {
+      button.textContent = 'View All Routes';
+      button.classList.remove('bg-gray-600');
+    }
+  });
+      
+  document.getElementById("subscribeForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Stop form from refreshing the page
+
+      const email = document.getElementById("emailInput").value.trim();
+
+      if (email) {
+        alert(`Thanks for subscribing with: ${email}`);
+        showThankYou(); // Show follow-up message
+        document.getElementById("emailInput").value = ""; // Clear input
+      } else {
+        alert("⚠️ Please enter a valid email address.");
+      }
+    });
+
+    function showThankYou() {
+      alert("🎉 Thank you for subscribing! You're now on our list. 😊");
+    }
+  
+  
+  
+  // Simple JavaScript for form validation
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu functionality
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileMenuContent = document.getElementById("mobileMenuContent");
+        const openMobileMenuBtn = document.getElementById("openMobileMenu");
+        const closeMobileMenuBtn = document.getElementById("closeMobileMenu");
+        if (
+          openMobileMenuBtn &&
+          closeMobileMenuBtn &&
+          mobileMenu &&
+          mobileMenuContent
+        ) {
+          openMobileMenuBtn.addEventListener("click", function () {
+            mobileMenu.classList.remove("hidden");
+            setTimeout(() => {
+              mobileMenuContent.classList.remove("-translate-x-full");
+            }, 10);
+          });
+          function closeMobileMenu() {
+            mobileMenuContent.classList.add("-translate-x-full");
+            setTimeout(() => {
+              mobileMenu.classList.add("hidden");
+            }, 300);
+          }
+          closeMobileMenuBtn.addEventListener("click", closeMobileMenu);
+          mobileMenu.addEventListener("click", function (e) {
+            if (e.target === mobileMenu) {
+              closeMobileMenu();
+            }
+          });
+          // Close mobile menu when clicking on a link
+          const mobileMenuLinks = mobileMenuContent.querySelectorAll("a");
+          mobileMenuLinks.forEach((link) => {
+            link.addEventListener("click", closeMobileMenu);
+          });
+        }
+        const form = document.querySelector("form");
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            if (!name || !email) {
+              // Create custom notification instead of alert
+              showNotification("Please fill in all required fields", "error");
+              return;
+            }
+            // Show success message
+            showNotification(
+              "Thank you for your message! We will get back to you soon.",
+              "success",
+            );
+            form.reset();
+          });
+        }
+        
+        // Track shipment functionality
+        const trackForm = document.querySelector(
+          '.flex.items-center input[type="text"]',
+        );
+        const trackButton = trackForm?.nextElementSibling;
+        if (trackForm && trackButton) {
+          trackButton.addEventListener("click", function () {
+            const trackingNumber = trackForm.value.trim();
+            if (!trackingNumber) {
+              showNotification("Please enter a tracking number", "error");
+              return;
+            }
+            showNotification(
+              "Tracking information for " + trackingNumber + " is being processed",
+              "info",
+            );
+          });
+        }
+        document.getElementById('contact-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const submitButton = form.querySelector('button[type="submit"]');
+    const responseDiv = document.getElementById('form-response') || document.createElement('div');
+    
+    // Clear previous messages
+    responseDiv.innerHTML = '';
+    responseDiv.className = 'mt-4';
+    
+    try {
+      // Show loading state
+      submitButton.disabled = true;
+      submitButton.innerHTML = '<i class="ri-loader-4-line animate-spin mr-2"></i> Sending...';
+      
+      // Add timestamp and honeypot fields
+      const timestamp = document.createElement('input');
+      timestamp.type = 'hidden';
+      timestamp.name = '_timestamp';
+      timestamp.value = Date.now();
+      form.appendChild(timestamp);
+      
+      const honeypot = document.createElement('input');
+      honeypot.type = 'text';
+      honeypot.name = '_honey';
+      honeypot.style.display = 'none';
+      form.appendChild(honeypot);
+      
+      // Submit using alternative method
+      const formData = new URLSearchParams();
+      for (const pair of new FormData(form)) {
+        formData.append(pair[0], pair[1]);
+      }
+      
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json'
+        }
+      });
+      
+      // Clean up added fields
+      form.removeChild(timestamp);
+      form.removeChild(honeypot);
+      
+      if (!response.ok) {
+        throw new Error(`Server responded with ${response.status}`);
+      }
+      
+      // Verify Formspark received it
+      const result = await response.json();
+      if (!result.success) {
+        throw new Error('Formspark reported failure');
+      }
+      
+      // Success message with reference number
+      responseDiv.innerHTML = `
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+          <strong>Received!</strong> Reference: ${result.id || Date.now()}
+          <p class="mt-2 text-sm">We'll respond within 24 hours.</p>
+        </div>
+      `;
+      form.reset();
+      
+    } catch (error) {
+      // Fallback email suggestion
+      responseDiv.innerHTML = `
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+          <strong>Delivery Failed</strong>
+          <p class="mt-1">Please email us directly at:</p>
+          <a href="mailto:info@SereneSea.in" class="font-bold underline">info@SereneSea.in</a>
+        </div>
+      `;
+      console.error('Form error:', error);
+    } finally {
+      // Reset button
+      submitButton.disabled = false;
+      submitButton.innerHTML = '<i class="ri-send-plane-line mr-2"></i> Send Message';
+    }
+  });
+        // Custom notification function
+        function showNotification(message, type) {
+          // Remove existing notifications
+          const existingNotifications = document.querySelectorAll(
+            ".custom-notification",
+          );
+          existingNotifications.forEach((notification) => {
+            notification.remove();
+          });
+          // Create notification element
+          const notification = document.createElement("div");
+          notification.className = "custom-notification";
+          notification.style.position = "fixed";
+          notification.style.bottom = "20px";
+          notification.style.right = "20px";
+          notification.style.padding = "15px 20px";
+          notification.style.borderRadius = "8px";
+          notification.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.15)";
+          notification.style.zIndex = "9999";
+          notification.style.minWidth = window.innerWidth < 768 ? "85%" : "300px";
+          notification.style.maxWidth = window.innerWidth < 768 ? "85%" : "400px";
+          notification.style.display = "flex";
+          notification.style.alignItems = "center";
+          notification.style.transition = "all 0.3s ease";
+          // Adjust position for mobile
+          if (window.innerWidth < 768) {
+            notification.style.left = "50%";
+            notification.style.right = "auto";
+            notification.style.transform = "translateX(-50%)";
+            notification.style.bottom = "30px";
+          }
+          // Set styles based on notification type
+          if (type === "success") {
+            notification.style.backgroundColor = "#d4edda";
+            notification.style.color = "#155724";
+            notification.style.borderLeft = "4px solid #28a745";
+          } else if (type === "error") {
+            notification.style.backgroundColor = "#f8d7da";
+            notification.style.color = "#721c24";
+            notification.style.borderLeft = "4px solid #dc3545";
+          } else if (type === "info") {
+            notification.style.backgroundColor = "#d1ecf1";
+            notification.style.color = "#0c5460";
+            notification.style.borderLeft = "4px solid #17a2b8";
+          }
+          // Add icon based on type
+          const icon = document.createElement("div");
+          icon.style.marginRight = "10px";
+          icon.style.display = "flex";
+          icon.style.alignItems = "center";
+          icon.style.justifyContent = "center";
+          if (type === "success") {
+            icon.innerHTML = '<i class="ri-check-line ri-lg"></i>';
+          } else if (type === "error") {
+            icon.innerHTML = '<i class="ri-error-warning-line ri-lg"></i>';
+          } else if (type === "info") {
+            icon.innerHTML = '<i class="ri-information-line ri-lg"></i>';
+          }
+          // Add message
+          const messageElement = document.createElement("div");
+          messageElement.textContent = message;
+          messageElement.style.flex = "1";
+          messageElement.style.fontSize = window.innerWidth < 768 ? "14px" : "16px";
+          // Add close button
+          const closeButton = document.createElement("div");
+          closeButton.innerHTML = '<i class="ri-close-line"></i>';
+          closeButton.style.marginLeft = "10px";
+          closeButton.style.cursor = "pointer";
+          closeButton.addEventListener("click", function () {
+            document.body.removeChild(notification);
+          });
+          // Assemble notification
+          notification.appendChild(icon);
+          notification.appendChild(messageElement);
+          notification.appendChild(closeButton);
+          // Add to DOM
+          document.body.appendChild(notification);
+          // Auto remove after 5 seconds
+          setTimeout(function () {
+            if (document.body.contains(notification)) {
+              notification.style.opacity = "0";
+              setTimeout(function () {
+                if (document.body.contains(notification)) {
+                  document.body.removeChild(notification);
+                }
+              }, 300);
+            }
+          }, 5000);
+        }
+        // Language selector functionality
+        const languageSelector = document.querySelector(".custom-select");
+        if (languageSelector) {
+          languageSelector.addEventListener("change", function () {
+            const selectedLanguage = this.value;
+            showNotification(
+              "Language changed to " + getLanguageName(selectedLanguage),
+              "info",
+            );
+          });
+        }
+        function getLanguageName(code) {
+          const languages = {
+            en: "English",
+            hi: "Hindi",
+            Sp: "Spanish",
+            Fr: "French",
+            Ch: "Chinese",
+          };
+          return languages[code] || code;
+        }
+        // Service interest dropdown functionality
+        const serviceDropdown = document.getElementById("service");
+        if (serviceDropdown) {
+          serviceDropdown.addEventListener("change", function () {
+            if (this.value) {
+              const serviceText = this.options[this.selectedIndex].text;
+              const messageField = document.getElementById("message");
+              if (messageField && !messageField.value) {
+                messageField.value = `I'm interested in your ${serviceText} services. Please provide more information.`;
+              }
+            }
+          });
+        }
+        // Add responsive adjustments for form elements on smaller screens
+        function adjustFormElementsForMobile() {
+          if (window.innerWidth < 768) {
+            const formInputs = document.querySelectorAll("input, select, textarea");
+            formInputs.forEach((input) => {
+              if (input.classList.contains("py-2")) {
+                input.classList.remove("py-2");
+                input.classList.add("py-3");
+              }
+            });
+          }
+        }
+        adjustFormElementsForMobile();
+        window.addEventListener("resize", adjustFormElementsForMobile);
+      });
+    </script>
+  </body>
+</html>
+

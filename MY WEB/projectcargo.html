@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>
+      Serene Sea Shipping - Your Trusted Freight Forwarding Partner in India
+    </title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0f4c81", secondary: "#e67e22" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+
+  /* Fix dropdown inside modal */
+  select {
+      z-index: 10;
+      position: relative;
+    }
+
+.nav-btn {
+    background-color: white;
+    color: #0D3B66;
+    border: 1px solid #0D3B66;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .nav-btn.active {
+    background-color: #0D3B66;
+    color: white;
+  }
+      
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Poppins', sans-serif;
+      }
+      .custom-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-size: 1.5em 1.5em;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      .custom-checkbox {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      }
+      .custom-checkbox input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+      .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+      background-color: #0f4c81;
+      border-color: #0f4c81;
+      }
+      .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+      display: block;
+      }
+      .custom-checkbox .checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .custom-switch {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 24px;
+      }
+      .custom-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+      .switch-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+      }
+      .switch-slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      }
+      .custom-switch input:checked + .switch-slider {
+      background-color: #0f4c81;
+      }
+      .custom-switch input:checked + .switch-slider:before {
+      transform: translateX(20px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+  <!-- Top Header --> 
+<div class="bg-primary text-white py-2">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    
+    <!-- Left Side: Phone & Email -->
+    <div class="flex items-center space-x-4 text-sm">
+      
+      <!-- Phone -->
+      <div class="flex items-center">
+        <a
+          href="tel:+918980888809"
+          class="flex items-center hover:text-secondary transition"
+        >
+          <div class="w-4 h-4 flex items-center justify-center mr-1">
+            <i class="ri-phone-line"></i>
+          </div>
+          <span>+91 8980888809</span>
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-center">
+        <a
+          href="mailto:info@SereneSea.in"
+          class="flex items-center hover:text-secondary transition"
+        >
+          <div class="w-4 h-4 flex items-center justify-center mr-1">
+            <i class="ri-mail-line"></i>
+          </div>
+          <span>info@SereneSea.in</span>
+        </a>
+      </div>
+        </div>
+        <div class="flex items-center space-x-4 text-sm">
+          <div class="flex items-center">
+            <div class="w-4 h-4 flex items-center justify-center mr-1">
+              <i class="ri-time-line"></i>
+            </div>
+            <span>MON - SAT  7:00 A.M - 12:00 P.M</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="https://wa.me/918980888809" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-whatsapp-fill"></i>
+              </div>
+            </a>
+            <a href="mailto:Info@SereneSea.in" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-mail-fill"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/company/serene-sea-shipping/" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <a href="#" class="mr-10"
+              ><img
+                src="https://static.readdy.ai/image/cf193dcb287cf1282d22687033aaf80f/c33d88492b7db220482f2808d6cecf62.png"
+                alt="Serene Sea Shipping"
+                class="h-16"
+            /></a>
+            <nav class="hidden md:flex space-x-8">
+            
+            
+             
+           
+              <button onclick="window.location.href='index.html'">Home</button>
+              <button onclick="window.location.href='services.html'">Services</button>
+              <button onclick="window.location.href='projectcargo.html'">Projects</button>
+    <button onclick="window.location.href='tracking.html'">Tracking</button>    
+    <button onclick="window.location.href='about.html'">About</button>
+    <button onclick="window.location.href='contact.html'">Contact</button>
+              
+              
+            </nav>
+            <div id="mobileMenu" class="fixed inset-0 bg-black/50 z-50 hidden">
+              <div
+                class="bg-white h-full w-4/5 max-w-sm p-6 transform transition-transform duration-300 -translate-x-full"
+                id="mobileMenuContent"
+              >
+                <div class="flex justify-between items-center mb-8">
+                  <a href="#" class="font-['Pacifico'] text-primary text-2xl"
+                    >Serene Sea</a
+                  >
+                  <button id="closeMobileMenu" class="text-gray-500">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                          <i class="ri-close-line text-xl"></i>
+                        </div>
+                      </button>
+                    </div>
+                    <nav class="flex flex-col space-y-4">
+                      <a
+                        href="#"
+                        class="text-primary font-medium py-2 border-b border-gray-100"
+                        >Home</a
+                      >
+                      <a
+                        href="#"
+                        class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                        >Services</a
+                      >
+                      <a
+                        href="#"
+                        class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                        >Tracking</a
+                      >
+                      <a
+                        href="#"
+                        class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                        >About Us</a
+                      >
+                      <a
+                        href="#"
+                        class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+                        >Contact</a
+                      >
+                    </nav>
+                    <div class="mt-8">
+                      <button
+                        class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center justify-center"
+                      >
+                        <div class="w-4 h-4 flex items-center justify-center mr-1">
+                          <i class="ri-file-list-3-line"></i>
+                        </div>
+                        Get Quote
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="relative">
+                  <select
+                    class="custom-select pr-8 py-2 pl-3 border border-gray-300 rounded-button text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm"
+                  >
+                  <option value="en">English</option>
+                  <option value="hi">Hindi</option>
+                  <option value="Sp">Spanish</option>
+                  <option value="Fr">French</option>
+                  <option value="Ch">Chinese</option>
+                  </select>
+                </div>
+                <button 
+      onclick="openQuoteModal()"
+      class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center"
+    >
+      <div class="w-4 h-4 flex items-center justify-center mr-1">
+        <i class="ri-file-list-3-line"></i>
+      </div>
+      Get Quote
+    </button>
+
+                <!-- Get Quote Modal -->
+    <div
+    id="quoteModal"
+    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300"
+    onclick="handleQuoteOutsideClick(event)"
+    >
+    <div
+      id="quoteModalContent"
+      class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative transform scale-95 transition-transform duration-300"
+      onclick="event.stopPropagation()"
+    >
+      <!-- Close Button -->
+      <button
+        onclick="closeQuoteModal()"
+        class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl font-bold"
+      >
+        &times;
+      </button>
+
+      <!-- Modal Heading -->
+      <h3 class="text-2xl font-bold mb-4">Get a Quote</h3>
+
+      <!-- Form -->
+      <form id="quoteForm" class="space-y-4" novalidate>
+        <div>
+          <label for="quoteName" class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" id="quoteName" name="name" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="quoteEmail" class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" id="quoteEmail" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="quotePhone" class="block text-sm font-medium mb-1">Phone</label>
+          <input type="tel" id="quotePhone" name="phone" class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label for="quoteService" class="block text-sm font-medium mb-1">Service Type</label>
+          <select id="quoteService" name="service" class="w-full border border-gray-300 rounded px-4 py-2">
+            <option value="">Select a service</option>
+            <option>Land Transport</option>
+            <option>Sea Freight</option>
+            <option>Air Freight</option>
+            <option>Warehousing</option>
+          </select>
+        </div>
+        <div>
+          <label for="quoteMessage" class="block text-sm font-medium mb-1">Message</label>
+          <textarea id="quoteMessage" name="message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+        </div>
+        <button type="submit" class="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition">
+          Submit Quote Request
+        </button>
+      </form>
+
+      <!-- Thank You Message -->
+      <div id="quoteThankYou" class="hidden text-center">
+        <h4 class="text-xl font-semibold mb-2">Thank You!</h4>
+        <p class="text-gray-600">We've received your quote request. We'll get back to you shortly.</p>
+      </div>
+    </div>
+    </div>
+    <script>
+      const quoteModal = document.getElementById('quoteModal');
+      const quoteModalContent = document.getElementById('quoteModalContent');
+      const quoteForm = document.getElementById('quoteForm');
+      const quoteThankYou = document.getElementById('quoteThankYou');
+
+      function openQuoteModal() {
+        quoteModal.classList.remove('hidden');
+        setTimeout(() => {
+          quoteModal.classList.remove('opacity-0');
+          quoteModalContent.classList.remove('scale-95');
+        }, 10);
+      }
+
+      function closeQuoteModal() {
+        quoteModal.classList.add('opacity-0');
+        quoteModalContent.classList.add('scale-95');
+        setTimeout(() => {
+          quoteModal.classList.add('hidden');
+          quoteForm.reset();
+          quoteForm.classList.remove('hidden');
+          quoteThankYou.classList.add('hidden');
+        }, 300);
+      }
+
+      function handleQuoteOutsideClick(event) {
+        if (event.target === quoteModal) {
+          closeQuoteModal();
+        }
+      }
+
+      // Form submit handler
+      quoteForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('quoteName').value.trim();
+      const email = document.getElementById('quoteEmail').value.trim();
+
+      if (!name || !email) {
+        alert('Please fill in both your name and email.');
+        return;
+      }
+
+      quoteForm.classList.add('hidden');
+      quoteThankYou.classList.remove('hidden');
+      setTimeout(() => {
+        closeQuoteModal();
+      }, 3000);
+    });
+    </script>
+
+              </div>
+            </div>
+          </div>
+        </header>
+    <!-- Hero Section -->
+<div class="w-full relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=professional%20maritime%20shipping%20scene%20with%20large%20cargo%20vessels%20transporting%20oversized%20industrial%20equipment%2C%20ocean%20background%20with%20calm%20blue%20water%2C%20industrial%20cranes%20loading%20heavy%20machinery%2C%20professional%20atmosphere%2C%20soft%20lighting%2C%20high-quality%20realistic%20photography&width=1920&height=800&seq=1&orientation=landscape');             background-size: cover;
+background-position: center;
+height: 409px;">  
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40"></div>
+<div class="container mx-auto px-4 py-20 relative z-10">
+  <div class="max-w-2xl text-white">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">Comprehensive Ocean Freight Solutions</h1>
+<p class="text-white text-lg mb-10">Our comprehensive ocean freight services offer the most efficient, reliable, and secure shipping solutions, tailored to meet your unique global trade requirements.</p>
+<div class="flex flex-wrap gap-4">
+<a href="services.html#service-inquiry" class="bg-white text-primary py-3 px-6 !rounded-button font-medium flex items-center whitespace-nowrap hover:bg-gray-100 transition">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-file-list-3-line"></i>
+</div>
+Request Quote
+</a>
+<a href="view all.html" class="bg-secondary text-white py-3 px-6 !rounded-button font-medium flex items-center whitespace-nowrap hover:bg-secondary/90 transition">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-arrow-down-line"></i>
+</div>
+Explore All Projects
+</a>
+</div>
+</div>
+</div>
+</div>
+<section id="learn-more" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Project Cargo Expertise</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">We provide comprehensive solutions for transporting oversized and heavy cargo with precision and care.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+                    <i class="ri-ship-line text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Heavy-lift Shipping</h3>
+                <p class="text-gray-700">Specialized vessels and equipment for transporting extremely heavy industrial components.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+                    <i class="ri-truck-line text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Oversized Transport</h3>
+                <p class="text-gray-700">Custom solutions for cargo that exceeds standard dimensions, requiring special handling and permits.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+                    <i class="ri-route-line text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Route Planning</h3>
+                <p class="text-gray-700">Detailed logistics planning to navigate complex routes for oversized cargo delivery.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+                    <i class="ri-file-list-3-line text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Documentation</h3>
+                <p class="text-gray-700">Comprehensive handling of permits, customs clearance, and regulatory compliance for project cargo.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+                    <i class="ri-tools-line text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Engineering Support</h3>
+                <p class="text-gray-700">Technical expertise for load analysis, cargo securing, and specialized equipment requirements.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+                    <i class="ri-shield-check-line text-primary text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Risk Management</h3>
+                <p class="text-gray-700">Comprehensive risk assessment and mitigation strategies for high-value project cargo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Industry-Leading Equipment</h2>
+                <p class="text-lg text-gray-700 mb-6">Our fleet includes specialized vessels and equipment designed specifically for project cargo operations:</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 flex items-center justify-center text-primary mt-1 mr-3">
+                            <i class="ri-check-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Heavy-lift Vessels</h4>
+                            <p class="text-gray-700">Ships with cranes capable of lifting up to 1,500 tons</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 flex items-center justify-center text-primary mt-1 mr-3">
+                            <i class="ri-check-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Multi-axle Trailers</h4>
+                            <p class="text-gray-700">Specialized trailers for road transport of oversized cargo</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 flex items-center justify-center text-primary mt-1 mr-3">
+                            <i class="ri-check-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Hydraulic Modular Transporters</h4>
+                            <p class="text-gray-700">For precise positioning of extremely heavy loads</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 flex items-center justify-center text-primary mt-1 mr-3">
+                            <i class="ri-check-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Gantry Systems</h4>
+                            <p class="text-gray-700">For vertical lifting and positioning of heavy components</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://readdy.ai/api/search-image?query=heavy%20lift%20vessel%20with%20large%20cranes%20loading%20industrial%20equipment%2C%20maritime%20shipping%2C%20industrial%20port%20scene%2C%20professional%20cargo%20operations%2C%20clear%20day%2C%20no%20text%20or%20people%20visible&width=600&height=400&seq=3&orientation=landscape" alt="Heavy Lift Equipment" class="rounded-lg shadow-lg w-full object-cover object-top">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Recent Project Cargo Success Stories</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">Explore some of our most challenging and successful project cargo operations.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://readdy.ai/api/search-image?query=large%20wind%20turbine%20blades%20being%20transported%20on%20specialized%20vessel%2C%20maritime%20shipping%2C%20industrial%20cargo%2C%20professional%20logistics%20operation%2C%20clear%20day%2C%20no%20text%20or%20people%20visible&width=400&height=250&seq=4&orientation=landscape" alt="Wind Turbine Transport" class="w-full h-48 object-cover object-top">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Wind Turbine Transport</h3>
+                    <p class="text-gray-700 mb-4">Successful delivery of 85-meter wind turbine blades to an offshore wind farm project in the North Sea.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <div class="w-4 h-4 flex items-center justify-center mr-1">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span>North Sea, Europe</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://readdy.ai/api/search-image?query=large%20industrial%20transformer%20being%20loaded%20onto%20specialized%20vessel%2C%20heavy%20lift%20operation%2C%20maritime%20shipping%2C%20industrial%20port%20scene%2C%20professional%20cargo%20operations%2C%20clear%20day%2C%20no%20text%20or%20people%20visible&width=400&height=250&seq=5&orientation=landscape" alt="Power Plant Equipment" class="w-full h-48 object-cover object-top">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Power Plant Equipment</h3>
+                    <p class="text-gray-700 mb-4">Transport of 420-ton transformers and turbines for a new power generation facility in Southeast Asia.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <div class="w-4 h-4 flex items-center justify-center mr-1">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://readdy.ai/api/search-image?query=large%20oil%20and%20gas%20module%20being%20transported%20on%20specialized%20vessel%2C%20heavy%20lift%20operation%2C%20maritime%20shipping%2C%20industrial%20port%20scene%2C%20professional%20cargo%20operations%2C%20clear%20day%2C%20no%20text%20or%20people%20visible&width=400&height=250&seq=6&orientation=landscape" alt="Oil & Gas Modules" class="w-full h-48 object-cover object-top">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Oil & Gas Modules</h3>
+                    <p class="text-gray-700 mb-4">Complex logistics operation delivering multiple 1,200-ton modules for an offshore platform project.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <div class="w-4 h-4 flex items-center justify-center mr-1">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span>Gulf of Mexico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="view all.html" class="inline-flex items-center text-primary font-medium hover:underline">
+                View all case studies
+                <div class="w-5 h-5 flex items-center justify-center ml-1">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics -->
+<section class="py-16 bg-primary text-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Our Project Cargo Experience</h2>
+      <p class="text-lg opacity-90 max-w-3xl mx-auto">
+        Delivering exceptional results for complex project cargo requirements worldwide.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="250">0</span><span>+</span>
+        </div>
+        <p class="text-lg opacity-90">Project Cargo Shipments</p>
+      </div>
+
+      <div class="text-center">
+        <div class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="45000">0</span><span>+</span>
+        </div>
+        <p class="text-lg opacity-90">Tons of Heavy Lift Cargo</p>
+      </div>
+
+      <div class="text-center">
+        <div class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="35">0</span><span>+</span>
+        </div>
+        <p class="text-lg opacity-90">Countries Served</p>
+      </div>
+
+      <div class="text-center">
+        <div class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="15">0</span><span>+</span>
+        </div>
+        <p class="text-lg opacity-90">Years of Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Counter Animation Script -->
+<script>
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200; // Lower is faster
+
+  const animateCounters = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText.replace(/,/g, '');
+          const increment = Math.ceil(target / speed);
+
+          if (count < target) {
+            counter.innerText = count.toLocaleString();
+            counter.innerText = (count + increment).toLocaleString();
+            setTimeout(updateCount, 15);
+          } else {
+            counter.innerText = target.toLocaleString();
+          }
+        };
+        updateCount();
+        observer.unobserve(counter); // Only animate once
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(animateCounters, {
+    threshold: 1
+  });
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+</script>
+
+
+<!-- Contact Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 bg-primary p-8 text-white">
+                    <h2 class="text-2xl font-bold mb-6">Contact Our Project Cargo Team</h2>
+                    <p class="mb-8">Our specialized team is ready to discuss your project cargo requirements and provide tailored solutions.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-phone-fill ri-lg text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium mb-1">Phone</h3>
+                                <p>+91 8980888809</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-mail-fill ri-lg text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium mb-1">Email</h3>
+                                <p>Info@SereneSea.in</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4 flex-shrink-0">
+                                <i class="ri-time-fill ri-lg text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium mb-1">Emergency Response</h3>
+                                <p>24/7 Support Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 p-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Request Information</h3>
+                    
+                    <form id="projectForm">
+
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Your name">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Your email">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="project" class="block text-sm font-medium text-gray-700 mb-1">Project Type</label>
+                            <div class="relative">
+                                <select id="project" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary pr-8">
+                                    <option value="">Select project type</option>
+                                    <option value="heavy-lift">Heavy Lift Transport</option>
+                                    <option value="oversized">Oversized Cargo</option>
+                                    <option value="industrial">Industrial Equipment</option>
+                                    <option value="other">Other Project Cargo</option>
+                                </select>
+                                <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none w-5 h-5 flex items-center justify-center text-gray-500">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Please describe your project cargo requirements"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 font-medium !rounded-button shadow hover:bg-primary/90 transition whitespace-nowrap">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Success Modal -->
+<div id="successModal" class="fixed inset-0 bg-black/50 justify-center items-center hidden z-50">
+  <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto text-center">
+    <h2 class="text-2xl font-bold text-green-600 mb-4">Thank You!</h2>
+    <p class="mb-6">Your request has been received. Our team will contact you shortly.</p>
+    <button id="closeSuccessModal" class="mt-4 px-6 py-2 bg-primary text-white rounded hover:bg-primary/80 transition">
+      Close
+    </button>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const successModal = document.getElementById("successModal");
+    const closeSuccessModal = document.getElementById("closeSuccessModal");
+    const projectForm = document.getElementById("projectForm");
+
+    if (projectForm) {
+      projectForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Show the modal
+        successModal.classList.remove("hidden");
+        successModal.classList.add("flex");
+
+        // Reset the form
+        projectForm.reset();
+      });
+    }
+
+    if (closeSuccessModal) {
+      closeSuccessModal.addEventListener("click", function () {
+        successModal.classList.add("hidden");
+        successModal.classList.remove("flex");
+      });
+    }
+  });
+</script>
+ <!-- Footer -->
+ <footer class="bg-gray-900 text-white pt-10 md:pt-16 pb-6 md:pb-8">
+  <div class="container mx-auto px-4">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-12"
+    >
+      <div>
+        <a href="#" class="mb-4 block font-['Pacifico'] text-white text-2xl"
+          >Serene Sea Shipping</a
+        >
+        <p class="text-gray-200 mb-6">
+          Your trusted freight forwarding partner with over 10+ years of
+          experience connecting India to the world through reliable shipping
+          solutions.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="https://wa.me/918980888809"
+            class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+          >
+            <div class="w-5 h-5 flex items-center justify-center">
+              <i class="ri-whatsapp-fill"></i>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/serene-sea-shipping/"
+            class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+          >
+            <div class="w-5 h-5 flex items-center justify-center">
+              <i class="ri-linkedin-fill"></i>
+            </div>
+          </a>
+          <a
+            href="mailto:Info@SereneSea.in"
+            class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+          >
+            <div class="w-5 h-5 flex items-center justify-center">
+              <i class="ri-mail-fill"></i>
+
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/serenesea.in?igsh=b3VzdWNleHF1ZzB4"
+            class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+          >
+            <div class="w-5 h-5 flex items-center justify-center">
+              <i class="ri-instagram-line"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a>
+          </li>
+          <li>
+            <a href="services.html" class="text-gray-400 hover:text-white transition">Services</a>
+            <li>
+              <a href="tracking.html" class="text-gray-400 hover:text-white transition">Track Shipment</a> 
+            </li>
+            <li>
+              <a href="services.html#service-inquiry" class="text-gray-400 hover:text-white transition">Request Quote</a> 
+            </li>
+          <li>
+            <a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="services.html" class="text-gray-400 hover:text-white transition">Ocean Freight</a>
+          </li>
+          <li>
+            <a href="airfreight.html" class="text-gray-400 hover:text-white transition">Air Freight</a>
+          </li>
+          <li>
+            <a href="landtransport.html" class="text-gray-400 hover:text-white transition">Land Transport</a>
+          </li>
+          <li>
+            <a href="warehousing.html" class="text-gray-400 hover:text-white transition">Warehousing</a>
+          </li>
+          <li>
+            <a href="customclearance.html" class="text-gray-400 hover:text-white transition">Customs Clearance</a>
+          </li>
+          <li>
+            <a href="projectcargo.html" class="text-gray-400 hover:text-white transition">Project Logistics </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+  <div>
+  <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+  <ul class="space-y-3">
+  <li class="flex">
+  <div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+  <i class="ri-map-pin-line text-secondary"></i>
+  </div>
+  <span class="text-gray-400">Tolani Chamber, Office no. 122, Near B.M Petrol Pump Gandhidham, Kutch-Gujarat 370201</span>
+  </li>
+  <li class="flex">
+  <div class="w-5 h-5 flex items-center justify-center mr-3">
+  <i class="ri-phone-line text-secondary"></i>
+  </div>
+  <a href="tel:+918980888809" class="text-gray-400 hover:text-white transition">+91 8980888809</a>
+  </li>
+  <li class="flex">
+  <div class="w-5 h-5 flex items-center justify-center mr-3">
+  <i class="ri-mail-line text-secondary"></i>
+  </div>
+  <a href="mailto:info@serenesea.in" class="text-gray-400 hover:text-white transition">info@serenesea.in</a>
+  </li>
+  <li class="flex">
+  <div class="w-5 h-5 flex items-center justify-center mr-3">
+  <i class="ri-mail-line text-secondary"></i>
+  </div>
+  <a href="mailto:cs@serenesea.in" class="text-gray-400 hover:text-white transition">cs@serenesea.in</a>
+  </li>
+  <li class="flex">
+  <div class="w-5 h-5 flex items-center justify-center mr-3">
+  <i class="ri-time-line text-secondary"></i>
+  </div>
+  <span class="text-gray-400">MON - SAT 7:00 A.M - 12:00 P.M</span>
+  </li>
+  </ul>
+  </div>
+ 
+  </div>
+  </div>
+  </div>
+  </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Performance chart
+      const performanceChart = echarts.init(
+        document.getElementById("performance-chart"),
+      );
+      const performanceOption = {
+        animation: false,
+        tooltip: {
+          trigger: "axis",
+          backgroundColor: "rgba(255, 255, 255, 0.8)",
+          borderColor: "#e2e8f0",
+          textStyle: {
+            color: "#1f2937",
+          },
+        },
+        legend: {
+          data: ["Ocean Freight", "Industry Average"],
+          bottom: 0,
+          textStyle: {
+            color: "#1f2937",
+          },
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "15%",
+          top: "3%",
+          containLabel: true,
+        },
+        xAxis: {
+          type: "category",
+          boundaryGap: false,
+          data: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          axisLine: {
+            lineStyle: {
+              color: "#e2e8f0",
+            },
+          },
+          axisLabel: {
+            color: "#1f2937",
+          },
+        },
+        yAxis: {
+          type: "value",
+          name: "On-Time %",
+          min: 80,
+          max: 100,
+          axisLine: {
+            lineStyle: {
+              color: "#e2e8f0",
+            },
+          },
+          axisLabel: {
+            color: "#1f2937",
+            formatter: "{value}%",
+          },
+          splitLine: {
+            lineStyle: {
+              color: "#f1f5f9",
+            },
+          },
+        },
+        series: [
+          {
+            name: "Ocean Freight",
+            type: "line",
+            smooth: true,
+            lineStyle: {
+              width: 3,
+              color: "rgba(87, 181, 231, 1)",
+            },
+            areaStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                {
+                  offset: 0,
+                  color: "rgba(87, 181, 231, 0.3)",
+                },
+                {
+                  offset: 1,
+                  color: "rgba(87, 181, 231, 0.1)",
+                },
+              ]),
+            },
+            data: [98.2, 97.8, 98.5, 99.1, 98.7, 99.2],
+            symbol: "none",
+          },
+          {
+            name: "Industry Average",
+            type: "line",
+            smooth: true,
+            lineStyle: {
+              width: 3,
+              color: "rgba(141, 211, 199, 1)",
+            },
+            data: [92.5, 91.8, 93.2, 92.7, 93.5, 92.9],
+            symbol: "none",
+          },
+        ],
+      };
+      performanceChart.setOption(performanceOption);
+      
+    
+      function navigate(button, url) {
+        // Remove 'active' from all buttons
+        const buttons = document.querySelectorAll('.nav-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+    
+        // Add 'active' to clicked button
+        button.classList.add('active');
+    
+        // Navigate to the page
+        window.location.href = url;
+      }
+    
+      // Optional: Automatically set the correct button as active based on current page
+      window.onload = () => {
+        const path = window.location.pathname.split("/").pop();
+        const buttons = document.querySelectorAll('.nav-btn');
+    
+        buttons.forEach(btn => {
+          if (btn.getAttribute("onclick").includes(path)) {
+            btn.classList.add('active');
+          }
+        });
+      };
+    
+    
+      
+      // Service tab switching
+      const serviceTabs = document.querySelectorAll(".service-tab");
+      serviceTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          serviceTabs.forEach((t) => t.classList.remove("active"));
+          serviceTabs.forEach((t) => t.classList.add("bg-gray-100"));
+          this.classList.add("active");
+          this.classList.remove("bg-gray-100");
+        });
+      });
+      // Resize chart on window resize
+      window.addEventListener("resize", function () {
+        performanceChart.resize();
+      });
+      // Specialist Contact Modal
+      const specialistModal = document.getElementById("specialist-modal");
+      const contactSpecialistBtn = document.getElementById(
+        "contact-specialist-btn",
+      );
+      const closeSpecialistModal = document.getElementById(
+        "close-specialist-modal",
+      );
+      const specialistContactForm = document.getElementById(
+        "specialist-contact-form",
+      );
+      // Open modal
+      if (contactSpecialistBtn) {
+        contactSpecialistBtn.addEventListener("click", function () {
+          specialistModal.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        });
+      }
+      // Close modal
+      if (closeSpecialistModal) {
+        closeSpecialistModal.addEventListener("click", function () {
+          specialistModal.classList.add("hidden");
+          document.body.style.overflow = "";
+        });
+      }
+      // Close modal when clicking outside
+      if (specialistModal) {
+        specialistModal.addEventListener("click", function (e) {
+          if (e.target === specialistModal) {
+            specialistModal.classList.add("hidden");
+            document.body.style.overflow = "";
+          }
+        });
+      }
+      // Form submission
+      if (specialistContactForm) {
+        // Add event listeners for contact method radio buttons
+        const contactMethodRadios = document.querySelectorAll(
+          'input[name="contact-method"]',
+        );
+        const phoneInput = document.getElementById("specialist-phone");
+        const emailInput = document.getElementById("specialist-email");
+        const contactMethodInfoDiv = document.createElement("div");
+        contactMethodInfoDiv.className = "mt-2 text-sm text-gray-600";
+        // Function to update contact method info
+        function updateContactMethodInfo(method) {
+          if (method === "phone") {
+            contactMethodInfoDiv.textContent =
+              "Our specialist will call you at the number provided";
+            phoneInput.setAttribute("required", "required");
+            phoneInput.parentNode.querySelector("label").innerHTML =
+              'Phone Number* <span class="text-primary text-sm">(Required for phone contact)</span>';
+          } else if (method === "whatsapp") {
+            contactMethodInfoDiv.innerHTML =
+              '<div class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-2 text-green-500"><i class="ri-whatsapp-line"></i></div>We\'ll contact you via WhatsApp at the number provided</div>';
+            phoneInput.setAttribute("required", "required");
+            phoneInput.parentNode.querySelector("label").innerHTML =
+              'Phone Number* <span class="text-sm text-primary">(Required for WhatsApp)</span>';
+            phoneInput.classList.add("border-green-500");
+          } else {
+            contactMethodInfoDiv.textContent =
+              "We'll respond to the email address you provided";
+            if (phoneInput.hasAttribute("required")) {
+              phoneInput.removeAttribute("required");
+            }
+            phoneInput.parentNode.querySelector("label").textContent =
+              "Phone Number*";
+          }
+          // Remove any highlight from phone input when changing methods
+          if (method !== "whatsapp") {
+            phoneInput.classList.remove("border-green-500");
+          }
+        }
+        // Add the info div after the contact method options
+        const contactMethodContainer = document
+          .querySelector('input[name="contact-method"]')
+          .closest("div").parentNode;
+        contactMethodContainer.appendChild(contactMethodInfoDiv);
+        // Set initial info based on default selection
+        updateContactMethodInfo(
+          document.querySelector('input[name="contact-method"]:checked').value,
+        );
+        // Add change event listeners to radio buttons
+        contactMethodRadios.forEach((radio) => {
+          radio.addEventListener("change", function () {
+            updateContactMethodInfo(this.value);
+    
+            // Add visual feedback for the selected contact method
+            contactMethodRadios.forEach((r) => {
+              const parentLabel = r.closest("label");
+              if (r.checked) {
+                parentLabel.classList.add(
+                  "ring-2",
+                  "ring-primary",
+                  "ring-opacity-50",
+                  "bg-primary/5",
+                  "rounded",
+                );
+              } else {
+                parentLabel.classList.remove(
+                  "ring-2",
+                  "ring-primary",
+                  "ring-opacity-50",
+                  "bg-primary/5",
+                  "rounded",
+                );
+              }
+            });
+          });
+        });
+    
+        // Initialize visual feedback for the default selected option
+        document.addEventListener("DOMContentLoaded", function () {
+          const checkedRadio = document.querySelector(
+            'input[name="contact-method"]:checked',
+          );
+          if (checkedRadio) {
+            const parentLabel = checkedRadio.closest("label");
+            parentLabel.classList.add(
+              "ring-2",
+              "ring-primary",
+              "ring-opacity-50",
+              "bg-primary/5",
+              "rounded",
+            );
+          }
+        });
+        specialistContactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          // Get form values
+          const nameInput = document.getElementById("specialist-name");
+          const companyInput = document.getElementById("specialist-company");
+          const messageInput = document.getElementById("specialist-message");
+          const contactMethod = document.querySelector(
+            'input[name="contact-method"]:checked',
+          ).value;
+          const contactTime = document.querySelector(
+            'input[name="contact-time"]:checked',
+          ).value;
+          // Simple validation
+          let isValid = true;
+          const requiredFields = [nameInput, emailInput, phoneInput, messageInput];
+          requiredFields.forEach((field) => {
+            // Skip phone validation if email is selected and phone is not required
+            if (
+              contactMethod === "email" &&
+              field === phoneInput &&
+              !field.hasAttribute("required")
+            ) {
+              return;
+            }
+            if (!field.value.trim()) {
+              isValid = false;
+              field.classList.add("border-red-500");
+              // Add error message if it doesn't exist
+              const errorId = `${field.id}-error`;
+              if (!document.getElementById(errorId)) {
+                const errorMsg = document.createElement("p");
+                errorMsg.id = errorId;
+                errorMsg.className = "text-red-500 text-xs mt-1";
+                errorMsg.textContent = "This field is required";
+                field.parentNode.appendChild(errorMsg);
+              }
+            } else {
+              field.classList.remove("border-red-500");
+              const errorEl = document.getElementById(`${field.id}-error`);
+              if (errorEl) errorEl.remove();
+            }
+          });
+          // Email validation
+          if (
+            emailInput.value.trim() &&
+            !emailInput.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
+          ) {
+            isValid = false;
+            emailInput.classList.add("border-red-500");
+            const errorId = "specialist-email-error";
+            if (!document.getElementById(errorId)) {
+              const errorMsg = document.createElement("p");
+              errorMsg.id = errorId;
+              errorMsg.className = "text-red-500 text-xs mt-1";
+              errorMsg.textContent = "Please enter a valid email address";
+              emailInput.parentNode.appendChild(errorMsg);
+            }
+          }
+          // Phone validation for phone or whatsapp contact methods
+          if (
+            (contactMethod === "phone" || contactMethod === "whatsapp") &&
+            phoneInput.value.trim()
+          ) {
+            // Simple phone validation (can be enhanced based on requirements)
+            if (!phoneInput.value.match(/^\+?[0-9\s\-\(\)]{8,20}$/)) {
+              isValid = false;
+              phoneInput.classList.add("border-red-500");
+              const errorId = "specialist-phone-error";
+              if (!document.getElementById(errorId)) {
+                const errorMsg = document.createElement("p");
+                errorMsg.id = errorId;
+                errorMsg.className = "text-red-500 text-xs mt-1";
+                errorMsg.textContent = "Please enter a valid phone number";
+                phoneInput.parentNode.appendChild(errorMsg);
+              }
+            }
+          }
+          if (!isValid) return;
+          // Here you would typically send the data to your server
+          console.log({
+            name: nameInput.value,
+            company: companyInput.value,
+            email: emailInput.value,
+            phone: phoneInput.value,
+            message: messageInput.value,
+            contactMethod,
+            contactTime,
+          });
+          // Show visual feedback for selected contact method
+          const methodLabel =
+            contactMethod === "email"
+              ? "Email"
+              : contactMethod === "phone"
+                ? "Phone Call"
+                : "WhatsApp Message";
+          // Show success message
+          const formContent = specialistContactForm.innerHTML;
+          specialistContactForm.innerHTML = `
+    <div class="text-center py-8">
+    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+    <i class="ri-check-line text-green-500 text-3xl"></i>
+    </div>
+    <h4 class="text-xl font-semibold text-gray-800 mb-2">Message Sent Successfully!</h4>
+    <p class="text-gray-600 mb-2">Thank you for contacting our Ocean Freight Specialist.</p>
+    <p class="text-gray-600 mb-6">We'll get back to you via <span class="font-medium">${methodLabel}</span> shortly.</p>
+    <button id="close-success" class="bg-primary text-white py-2 px-6 !rounded-button font-medium whitespace-nowrap hover:bg-primary/90 transition">
+    Close
+    </button>
+    </div>
+    `;
+          // Add event listener to the new close button
+          document
+            .getElementById("close-success")
+            .addEventListener("click", function () {
+              specialistModal.classList.add("hidden");
+              document.body.style.overflow = "";
+              // Reset form after a short delay
+              setTimeout(() => {
+                specialistContactForm.innerHTML = formContent;
+                // Re-add event listeners to form fields and contact method radios
+                document
+                  .querySelectorAll(
+                    "#specialist-contact-form input, #specialist-contact-form textarea",
+                  )
+                  .forEach((field) => {
+                    field.addEventListener("input", function () {
+                      this.classList.remove("border-red-500");
+                      const errorEl = document.getElementById(`${this.id}-error`);
+                      if (errorEl) errorEl.remove();
+                    });
+                  });
+                // Re-initialize contact method radio buttons
+                const newContactMethodRadios = document.querySelectorAll(
+                  'input[name="contact-method"]',
+                );
+                newContactMethodRadios.forEach((radio) => {
+                  radio.addEventListener("change", function () {
+                    updateContactMethodInfo(this.value);
+                  });
+                });
+                // Re-add the info div and set initial info
+                const newContactMethodContainer = document
+                  .querySelector('input[name="contact-method"]')
+                  .closest("div").parentNode;
+                newContactMethodContainer.appendChild(contactMethodInfoDiv);
+                updateContactMethodInfo(
+                  document.querySelector('input[name="contact-method"]:checked')
+                    .value,
+                );
+              }, 300);
+            });
+        });
+        // Add input event listeners to clear validation errors
+        document
+          .querySelectorAll(
+            "#specialist-contact-form input, #specialist-contact-form textarea",
+          )
+          .forEach((field) => {
+            field.addEventListener("input", function () {
+              this.classList.remove("border-red-500");
+              const errorEl = document.getElementById(`${this.id}-error`);
+              if (errorEl) errorEl.remove();
+            });
+          });
+      }
+    });
+    // Function to scroll to quote form and select service type
+    function scrollToQuoteForm(serviceType) {
+      const serviceInquirySection = document.getElementById("service-inquiry");
+      const serviceTypeSelect = document.getElementById("service-type");
+      // Scroll to the form section
+      serviceInquirySection.scrollIntoView({ behavior: "smooth" });
+      // Set the selected option in the dropdown
+      for (let i = 0; i < serviceTypeSelect.options.length; i++) {
+        if (serviceTypeSelect.options[i].text === serviceType) {
+          serviceTypeSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+    
+    </script>
+    </body>
+    </html>

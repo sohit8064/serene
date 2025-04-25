@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Cargo Case Studies - Serene Sea Shipping</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#0f4c81',secondary:'#7ab3d0'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0f4c81", secondary: "#e67e22" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background-image: url('https://readdy.ai/api/search-image?query=professional%2520maritime%2520shipping%2520scene%2520with%2520large%2520cargo%2520vessels%2520transporting%2520oversized%2520industrial%2520equipment%252C%2520aerial%2520view%2520of%2520port%2520with%2520multiple%2520project%2520cargo%2520operations%2520in%2520progress%252C%2520industrial%2520cranes%2520loading%2520heavy%2520machinery%252C%2520professional%2520atmosphere%252C%2520soft%2520lighting%252C%2520high-quality%2520realistic%2520photography&width=1920&height=500&seq=6&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+            height: 409px;
+        }
+        
+        input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #d1d5db;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        input[type="checkbox"]:checked {
+            background-color: #0f4c81;
+            border-color: #000000;
+        }
+        
+        input[type="checkbox"]:checked::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 6px;
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        
+        .case-study-card:hover .view-details {
+            opacity: 1;
+        }
+        
+        .modal {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            transform: translateY(20px);
+            transition: transform 0.3s;
+        }
+        
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+        
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Top Header --> 
+<div class="bg-primary text-white py-2">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      
+      <!-- Left Side: Phone & Email -->
+      <div class="flex items-center space-x-4 text-sm">
+        
+        <!-- Phone -->
+        <div class="flex items-center">
+          <a
+            href="tel:+918980888809"
+            class="flex items-center hover:text-secondary transition"
+          >
+            <div class="w-4 h-4 flex items-center justify-center mr-1">
+              <i class="ri-phone-line"></i>
+            </div>
+            <span>+91 8980888809</span>
+          </a>
+        </div>
+  
+        <!-- Email -->
+        <div class="flex items-center">
+          <a
+            href="mailto:info@SereneSea.in"
+            class="flex items-center hover:text-secondary transition"
+          >
+            <div class="w-4 h-4 flex items-center justify-center mr-1">
+              <i class="ri-mail-line"></i>
+            </div>
+            <span>info@SereneSea.in</span>
+          </a>
+        </div>
+        </div>
+        <div class="flex items-center space-x-4 text-sm">
+          <div class="flex items-center">
+            <div class="w-4 h-4 flex items-center justify-center mr-1">
+              <i class="ri-time-line"></i>
+            </div>
+            <span>MON - SAT  7:00 A.M - 12:00 P.M</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="https://wa.me/918980888809" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-whatsapp-fill"></i>
+              </div>
+            </a>
+            <a href="mailto:Info@SereneSea.in" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-mail-fill"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/company/serene-sea-shipping/" class="hover:text-gray-200">
+              <div class="w-5 h-5 flex items-center justify-center hover:text-secondary transition">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <a href="#" class="mr-10"
+              ><img
+                src="https://static.readdy.ai/image/cf193dcb287cf1282d22687033aaf80f/c33d88492b7db220482f2808d6cecf62.png"
+                alt="Serene Sea Shipping"
+                class="h-16"
+            /></a>
+            <nav class="hidden md:flex space-x-8">
+            
+            
+             
+              <button onclick="window.location.href='index.html'">Home</button>
+              <button onclick="window.location.href='services.html'">Services</button>
+              <button onclick="window.location.href='projectcargo.html'">Projects</button>
+    <button onclick="window.location.href='tracking.html'">Tracking</button>    
+    <button onclick="window.location.href='about.html'">About</button>
+    <button onclick="window.location.href='contact.html'">Contact</button>
+              
+              
+  </nav>
+  <div id="mobileMenu" class="fixed inset-0 bg-black/50 z-50 hidden">
+    <div
+      class="bg-white h-full w-4/5 max-w-sm p-6 transform transition-transform duration-300 -translate-x-full"
+      id="mobileMenuContent"
+    >
+      <div class="flex justify-between items-center mb-8">
+        <a href="#" class="font-['Pacifico'] text-primary text-2xl"
+          >Serene Sea</a
+        >
+        <button id="closeMobileMenu" class="text-gray-500">
+          <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-close-line text-xl"></i>
+              </div>
+            </button>
+          </div>
+          <nav class="flex flex-col space-y-4">
+            <a
+              href="#"
+              class="text-primary font-medium py-2 border-b border-gray-100"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+              >Tracking</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-primary transition py-2 border-b border-gray-100"
+              >Contact</a
+            >
+          </nav>
+          <div class="mt-8">
+            <button
+              class="w-full bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center justify-center"
+            >
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-file-list-3-line"></i>
+              </div>
+              Get Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="relative">
+        <select
+          class="custom-select pr-8 py-2 pl-3 border border-gray-300 rounded-button text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm"
+        >
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="Sp">Spanish</option>
+        <option value="Fr">French</option>
+        <option value="Ch">Chinese</option>
+        </select>
+      </div>
+      <button 
+onclick="openQuoteModal()"
+class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition flex items-center"
+>
+<div class="w-4 h-4 flex items-center justify-center mr-1">
+<i class="ri-file-list-3-line"></i>
+</div>
+Get Quote
+</button>
+
+      <!-- Get Quote Modal -->
+<div
+id="quoteModal"
+class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300"
+onclick="handleQuoteOutsideClick(event)"
+>
+<div
+id="quoteModalContent"
+class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative transform scale-95 transition-transform duration-300"
+onclick="event.stopPropagation()"
+>
+<!-- Close Button -->
+<button
+onclick="closeQuoteModal()"
+class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl font-bold"
+>
+&times;
+</button>
+
+<!-- Modal Heading -->
+<h3 class="text-2xl font-bold mb-4">Get a Quote</h3>
+
+<!-- Form -->
+<form id="quoteForm" class="space-y-4" novalidate>
+<div>
+<label for="quoteName" class="block text-sm font-medium mb-1">Name</label>
+<input type="text" id="quoteName" name="name" required class="w-full border border-gray-300 rounded px-4 py-2" />
+</div>
+<div>
+<label for="quoteEmail" class="block text-sm font-medium mb-1">Email</label>
+<input type="email" id="quoteEmail" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+</div>
+<div>
+<label for="quotePhone" class="block text-sm font-medium mb-1">Phone</label>
+<input type="tel" id="quotePhone" name="phone" class="w-full border border-gray-300 rounded px-4 py-2" />
+</div>
+<div>
+<label for="quoteService" class="block text-sm font-medium mb-1">Service Type</label>
+<select id="quoteService" name="service" class="w-full border border-gray-300 rounded px-4 py-2">
+  <option value="">Select a service</option>
+  <option>Land Transport</option>
+  <option>Sea Freight</option>
+  <option>Air Freight</option>
+  <option>Warehousing</option>
+</select>
+</div>
+<div>
+<label for="quoteMessage" class="block text-sm font-medium mb-1">Message</label>
+<textarea id="quoteMessage" name="message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition">
+Submit Quote Request
+</button>
+</form>
+
+<!-- Thank You Message -->
+<div id="quoteThankYou" class="hidden text-center">
+<h4 class="text-xl font-semibold mb-2">Thank You!</h4>
+<p class="text-gray-600">We've received your quote request. We'll get back to you shortly.</p>
+</div>
+</div>
+</div>
+<script>
+const quoteModal = document.getElementById('quoteModal');
+const quoteModalContent = document.getElementById('quoteModalContent');
+const quoteForm = document.getElementById('quoteForm');
+const quoteThankYou = document.getElementById('quoteThankYou');
+
+function openQuoteModal() {
+quoteModal.classList.remove('hidden');
+setTimeout(() => {
+quoteModal.classList.remove('opacity-0');
+quoteModalContent.classList.remove('scale-95');
+}, 10);
+}
+
+function closeQuoteModal() {
+quoteModal.classList.add('opacity-0');
+quoteModalContent.classList.add('scale-95');
+setTimeout(() => {
+quoteModal.classList.add('hidden');
+quoteForm.reset();
+quoteForm.classList.remove('hidden');
+quoteThankYou.classList.add('hidden');
+}, 300);
+}
+
+function handleQuoteOutsideClick(event) {
+if (event.target === quoteModal) {
+closeQuoteModal();
+}
+}
+
+// Form submit handler
+quoteForm.addEventListener('submit', function (e) {
+e.preventDefault();
+
+const name = document.getElementById('quoteName').value.trim();
+const email = document.getElementById('quoteEmail').value.trim();
+
+if (!name || !email) {
+alert('Please fill in both your name and email.');
+return;
+}
+
+quoteForm.classList.add('hidden');
+quoteThankYou.classList.remove('hidden');
+setTimeout(() => {
+closeQuoteModal();
+}, 3000);
+});
+</script>
+
+    </div>
+  </div>
+</div>
+</header>
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-primary/500"></div>
+        <div class="container mx-auto px-4 py-16 relative">
+            <div class="max-w-3xl">
+              <div class="hero-overlay w-full h-full absolute top-0 left-0" ></div>
+              <div class="container mx-auto px-4 py-20 relative z-10">
+              <div class="w-full">
+              <div class="text-white mb-4">
+              <div class="flex items-center text-sm mb-2">
+              <a href="index.html" class="text-white hover:text-primary">Home</a>
+  <div class="w-4 h-4 mx-1 flex items-center justify-center">
+  <i class="ri-arrow-right-s-line"></i>
+  </div>
+  <a href="projectcargo.html" data-readdy="true" class="text-white hover:text-primary">Project Cargo</a>
+  <div class="w-4 h-4 flex items-center justify-center text-gray-400 mx-1">
+      <i class="ri-arrow-right-s-line"></i>
+  </div>
+  <span class="text-white font-medium">Case Studies</span>
+</div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Project Cargo Case Studies</h1>
+                <p class="text-xl text-white mb-6">Explore our portfolio of successful project cargo operations across diverse industries and challenging environments worldwide.</p>
+                <div class="flex items-center">
+                    <a href="projectcargo.html" data-readdy="true" class="bg-white text-primary px-6 py-3 font-medium !rounded-button shadow-lg hover:bg-gray-100 transition whitespace-nowrap flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-arrow-left-line"></i>
+                        </div>
+                        Back to Project Cargo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="bg-white border-b border-gray-200 sticky top-0 z-30 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+                <div class="flex flex-wrap items-center gap-3 md:gap-4">
+                    <div class="relative">
+                        <select id="industry-filter" class="bg-white border border-gray-300 text-gray-700 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary">
+                            <option value="">All Industries</option>
+                            <option value="renewable-energy">Renewable Energy</option>
+                            <option value="oil-gas">Oil & Gas</option>
+                            <option value="power-generation">Power Generation</option>
+                            <option value="mining">Mining & Metals</option>
+                            <option value="infrastructure">Infrastructure</option>
+                        </select>
+                    </div>
+                    
+                    <div class="relative">
+                        <select id="cargo-filter" class="bg-white border border-gray-300 text-gray-700 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary">
+                            <option value="">All Cargo Types</option>
+                            <option value="heavy-lift">Heavy Lift</option>
+                            <option value="oversized">Oversized</option>
+                            <option value="industrial-equipment">Industrial Equipment</option>
+                            <option value="modular">Modular Units</option>
+                        </select>
+                    </div>
+                    
+                    <div class="relative">
+                        <select id="region-filter" class="bg-white border border-gray-300 text-gray-700 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary">
+                            <option value="">All Regions</option>
+                            <option value="asia">Asia</option>
+                            <option value="europe">Europe</option>
+                            <option value="americas">Americas</option>
+                            <option value="middle-east">Middle East</option>
+                            <option value="africa">Africa</option>
+                        </select>
+                    </div>
+                    
+                    <button id="clear-filters" class="bg-gray-100 text-gray-700 px-4 py-2 rounded font-medium hover:bg-gray-200 transition whitespace-nowrap flex items-center !rounded-button">
+                        <div class="w-4 h-4 flex items-center justify-center mr-1">
+                            <i class="ri-refresh-line"></i>
+                        </div>
+                        Clear Filters
+                    </button>
+                </div>
+                
+                <div class="text-gray-700">
+                    Showing <span id="result-count" class="font-semibold">12</span> case studies
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div id="case-studies-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="renewable-energy" data-cargo="oversized" data-region="europe">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=large%2520industrial%2520wind%2520turbine%2520blades%2520being%2520transported%2520on%2520specialized%2520cargo%2520ship%252C%2520professional%2520maritime%2520logistics%252C%2520clear%2520blue%2520sky%252C%2520industrial%2520scale%2520equipment%252C%2520high-quality%2520photography&width=600&height=400&seq=2&orientation=landscape" alt="Wind Energy Project" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Renewable Energy</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Wind Turbine Blade Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of 85-meter wind turbine blades from manufacturing facility to offshore installation site.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 35 tons per blade</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 85m × 4.5m × 3m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>North Sea, Europe</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: March 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="oil-gas" data-cargo="heavy-lift" data-region="middle-east">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=massive%2520oil%2520refinery%2520equipment%2520being%2520loaded%2520onto%2520specialized%2520cargo%2520vessel%252C%2520industrial%2520cranes%252C%2520professional%2520maritime%2520logistics%252C%2520clear%2520day%252C%2520high-quality%2520photography&width=600&height=400&seq=3&orientation=landscape" alt="Oil & Gas Equipment" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Oil & Gas</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Refinery Reactor Vessel Transport</h3>
+                        <p class="text-gray-600 mb-4">Delivery of 450-ton refinery reactor vessels requiring specialized heavy-lift vessels and custom cradles.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 450 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 42m × 8m × 9m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Arabian Gulf</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: January 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="power-generation" data-cargo="heavy-lift" data-region="asia">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=large%2520industrial%2520power%2520plant%2520generator%2520being%2520transported%2520on%2520specialized%2520heavy-lift%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520clear%2520day%252C%2520high-quality%2520photography&width=600&height=400&seq=4&orientation=landscape" alt="Power Generation" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Power Generation</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="3">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Gas Turbine Generator Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of 320-ton gas turbines and generators for a new power plant development project.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 320 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 28m × 6m × 5m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Southeast Asia</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: November 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 4 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="infrastructure" data-cargo="oversized" data-region="americas">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=massive%2520bridge%2520section%2520being%2520transported%2520by%2520specialized%2520cargo%2520barge%252C%2520professional%2520maritime%2520logistics%252C%2520coastal%2520waterway%252C%2520industrial%2520scale%2520equipment%252C%2520high-quality%2520photography&width=600&height=400&seq=7&orientation=landscape" alt="Bridge Section Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Infrastructure</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="4">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Bridge Section Transport</h3>
+                        <p class="text-gray-600 mb-4">Delivery of pre-fabricated bridge sections for a major infrastructure project across challenging waterways.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 580 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 65m × 22m × 12m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>East Coast, USA</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: February 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 5 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="renewable-energy" data-cargo="modular" data-region="europe">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=offshore%2520substation%2520platform%2520for%2520wind%2520farm%2520being%2520transported%2520on%2520specialized%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520north%2520sea%252C%2520high-quality%2520photography&width=600&height=400&seq=8&orientation=landscape" alt="Offshore Substation Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Renewable Energy</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="5">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Offshore Substation Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of a complete offshore substation platform for a major North Sea wind farm project.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 2,800 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 40m × 35m × 25m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>North Sea, Denmark</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: December 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 6 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="mining" data-cargo="industrial-equipment" data-region="africa">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=large%2520mining%2520excavator%2520parts%2520being%2520transported%2520on%2520specialized%2520cargo%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520port%2520scene%252C%2520high-quality%2520photography&width=600&height=400&seq=9&orientation=landscape" alt="Mining Equipment Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Mining</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="6">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mining Excavator Transport</h3>
+                        <p class="text-gray-600 mb-4">Transport of disassembled components for a 400-ton mining excavator to a remote mining site.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 400 tons (total)</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Largest piece: 18m × 6m × 5m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>West Africa</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: October 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 7 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="oil-gas" data-cargo="modular" data-region="americas">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=offshore%2520oil%2520platform%2520module%2520being%2520transported%2520on%2520specialized%2520heavy-lift%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520gulf%2520of%2520mexico%252C%2520high-quality%2520photography&width=600&height=400&seq=10&orientation=landscape" alt="Oil Platform Module Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Oil & Gas</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="7">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Oil Platform Module Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of a 3,200-ton living quarters module for an offshore oil platform in the Gulf of Mexico.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 3,200 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 45m × 30m × 20m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Gulf of Mexico</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: August 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 8 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="power-generation" data-cargo="heavy-lift" data-region="asia">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=hydroelectric%2520turbine%2520components%2520being%2520transported%2520on%2520specialized%2520cargo%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520river%2520transport%252C%2520high-quality%2520photography&width=600&height=400&seq=11&orientation=landscape" alt="Hydroelectric Turbine Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Power Generation</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="8">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Hydroelectric Turbine Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of 180-ton hydroelectric turbine components for a major dam project in Southeast Asia.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 180 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 12m × 8m × 7m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Mekong River, Laos</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: September 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 9 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="infrastructure" data-cargo="oversized" data-region="middle-east">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=massive%2520tunnel%2520boring%2520machine%2520components%2520being%2520transported%2520on%2520specialized%2520cargo%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520port%2520scene%252C%2520high-quality%2520photography&width=600&height=400&seq=12&orientation=landscape" alt="Tunnel Boring Machine Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Infrastructure</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="9">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tunnel Boring Machine Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of disassembled tunnel boring machine components for a major infrastructure project.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 1,200 tons (total)</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Largest piece: 15m × 10m × 8m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Qatar</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: April 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 10 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="renewable-energy" data-cargo="industrial-equipment" data-region="americas">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=solar%2520power%2520plant%2520transformers%2520being%2520transported%2520on%2520specialized%2520cargo%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520port%2520scene%252C%2520high-quality%2520photography&width=600&height=400&seq=13&orientation=landscape" alt="Solar Power Transformers Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Renewable Energy</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="10">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Solar Power Transformers Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of high-voltage transformers for a 500MW solar power plant in Chile's Atacama Desert.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 125 tons each</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 8m × 5m × 4m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Atacama Desert, Chile</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: February 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 11 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="mining" data-cargo="heavy-lift" data-region="africa">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=massive%2520mining%2520crusher%2520equipment%2520being%2520transported%2520on%2520specialized%2520cargo%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520port%2520scene%252C%2520high-quality%2520photography&width=600&height=400&seq=14&orientation=landscape" alt="Mining Crusher Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Mining</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="11">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mining Crusher Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of a 280-ton primary crusher for a copper mining operation in Zambia.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 280 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 12m × 8m × 7m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Zambia</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: January 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 12 -->
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition case-study-card group" data-industry="oil-gas" data-cargo="modular" data-region="asia">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://readdy.ai/api/search-image?query=lng%2520processing%2520module%2520being%2520transported%2520on%2520specialized%2520heavy-lift%2520vessel%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520port%2520scene%252C%2520high-quality%2520photography&width=600&height=400&seq=15&orientation=landscape" alt="LNG Module Transport" class="w-full h-full object-cover object-top">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Oil & Gas</span>
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center view-details">
+                            <button class="bg-primary text-white px-4 py-2 rounded font-medium hover:bg-primary/90 transition view-details-btn !rounded-button" data-id="12">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">LNG Processing Module Transport</h3>
+                        <p class="text-gray-600 mb-4">Transportation of a 4,500-ton LNG processing module for a major natural gas project in Australia.</p>
+                        <div class="flex flex-col space-y-2 text-sm">
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-scales-3-line"></i>
+                                </div>
+                                <span>Weight: 4,500 tons</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-ruler-2-line"></i>
+                                </div>
+                                <span>Dimensions: 55m × 35m × 30m</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <span>Western Australia</span>
+                            </div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-calendar-line"></i>
+                                </div>
+                                <span>Completed: March 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="load-more" class="bg-primary text-white px-6 py-3 font-medium !rounded-button shadow hover:bg-primary/90 transition whitespace-nowrap">
+                    Load More Case Studies
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Detail Modal -->
+    <div id="case-study-modal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 modal">
+        <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto modal-content">
+            <div class="relative">
+                <button id="close-modal" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md z-10 text-gray-700 hover:text-primary transition">
+                    <i class="ri-close-line ri-lg"></i>
+                </button>
+                
+                <div id="modal-content" class="p-6">
+                    <!-- Modal content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Industry Insights Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Project Cargo Industry Insights</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Explore our analysis of project cargo trends across different industries and regions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Project Cargo by Industry</h3>
+                    <div id="industry-chart" class="h-80"></div>
+                </div>
+                
+                <div class="bg-white p-6 rounded shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Project Cargo by Region</h3>
+                    <div id="region-chart" class="h-80"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-primary p-8 text-white">
+                        <h2 class="text-2xl font-bold mb-6">Discuss Your Project Cargo Requirements</h2>
+                        <p class="mb-8">Our specialized team is ready to help you plan and execute your next project cargo shipment with precision and care.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4 flex-shrink-0">
+                                    <i class="ri-phone-fill ri-lg text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium mb-1">Phone</h3>
+                                    <p>+91 8980888809</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4 flex-shrink-0">
+                                    <i class="ri-mail-fill ri-lg text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium mb-1">Email</h3>
+                                    <p>Info@SereneSea.in</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4 flex-shrink-0">
+                                    <i class="ri-time-fill ri-lg text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium mb-1">Emergency Response</h3>
+                                    <p>24/7 Support Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Request a Consultation</h3>
+                        
+                        <form id="consultationForm">
+
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Your name">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Your email">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="industry" class="block text-sm font-medium text-gray-700 mb-1">Industry</label>
+                                <div class="relative">
+                                    <select id="industry" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary pr-8">
+                                        <option value="">Select your industry</option>
+                                        <option value="renewable-energy">Renewable Energy</option>
+                                        <option value="oil-gas">Oil & Gas</option>
+                                        <option value="power-generation">Power Generation</option>
+                                        <option value="mining">Mining & Metals</option>
+                                        <option value="infrastructure">Infrastructure</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" placeholder="Please describe your project cargo requirements"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary text-white px-6 py-3 font-medium !rounded-button shadow hover:bg-primary/90 transition whitespace-nowrap">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Success Modal -->
+<div id="successModal" class="fixed inset-0 bg-black/50 justify-center items-center hidden z-50">
+  <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto text-center">
+    <h2 class="text-2xl font-bold text-green-600 mb-4">Thank You!</h2>
+    <p class="mb-6">Your request has been received. Our team will contact you shortly.</p>
+    <button id="closeSuccessModal" class="mt-4 px-6 py-2 bg-primary text-white rounded hover:bg-primary/80 transition">
+      Close
+    </button>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const successModal = document.getElementById("successModal");
+    const closeSuccessModal = document.getElementById("closeSuccessModal");
+    const consultationForm = document.getElementById("consultationForm");
+
+    if (consultationForm) {
+      consultationForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Show the success modal
+        successModal.classList.remove("hidden");
+        successModal.classList.add("flex");
+
+        // Reset the form fields
+        consultationForm.reset();
+      });
+    }
+
+    if (closeSuccessModal) {
+      closeSuccessModal.addEventListener("click", function () {
+        successModal.classList.add("hidden");
+        successModal.classList.remove("flex");
+      });
+    }
+  });
+</script>
+
+
+ <!-- Footer -->
+ <footer class="bg-gray-900 text-white pt-10 md:pt-16 pb-6 md:pb-8">
+    <div class="container mx-auto px-4">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-12"
+      >
+        <div>
+          <a href="#" class="mb-4 block font-['Pacifico'] text-white text-2xl"
+            >Serene Sea Shipping</a
+          >
+          <p class="text-gray-200 mb-6">
+            Your trusted freight forwarding partner with over 10+ years of
+            experience connecting India to the world through reliable shipping
+            solutions.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="https://wa.me/918980888809"
+              class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+            >
+              <div class="w-5 h-5 flex items-center justify-center">
+                <i class="ri-whatsapp-fill"></i>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/serene-sea-shipping/"
+              class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+            >
+              <div class="w-5 h-5 flex items-center justify-center">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+            <a
+              href="mailto:Info@SereneSea.in"
+              class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+            >
+              <div class="w-5 h-5 flex items-center justify-center">
+                <i class="ri-mail-fill"></i>
+  
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/serenesea.in?igsh=b3VzdWNleHF1ZzB4"
+              class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition"
+            >
+              <div class="w-5 h-5 flex items-center justify-center">
+                <i class="ri-instagram-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-gray-400 hover:text-white transition">Services</a>
+              <li>
+                <a href="tracking.html" class="text-gray-400 hover:text-white transition">Track Shipment</a> 
+              </li>
+              <li>
+                <a href="services.html#service-inquiry" class="text-gray-400 hover:text-white transition">Request Quote</a> 
+              </li>
+            <li>
+              <a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="services.html" class="text-gray-400 hover:text-white transition">Ocean Freight</a>
+            </li>
+            <li>
+              <a href="airfreight.html" class="text-gray-400 hover:text-white transition">Air Freight</a>
+            </li>
+            <li>
+              <a href="landtransport.html" class="text-gray-400 hover:text-white transition">Land Transport</a>
+            </li>
+            <li>
+              <a href="warehousing.html" class="text-gray-400 hover:text-white transition">Warehousing</a>
+            </li>
+            <li>
+              <a href="customclearance.html" class="text-gray-400 hover:text-white transition">Customs Clearance</a>
+            </li>
+            <li>
+              <a href="projectcargo.html" class="text-gray-400 hover:text-white transition">Project Logistics </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+    <div>
+    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+    <ul class="space-y-3">
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+    <i class="ri-map-pin-line text-secondary"></i>
+    </div>
+    <span class="text-gray-400">Tolani Chamber, Office no. 122, Near B.M Petrol Pump Gandhidham, Kutch-Gujarat 370201</span>
+    </li>
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3">
+    <i class="ri-phone-line text-secondary"></i>
+    </div>
+    <a href="tel:+918980888809" class="text-gray-400 hover:text-white transition">+91 8980888809</a>
+    </li>
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3">
+    <i class="ri-mail-line text-secondary"></i>
+    </div>
+    <a href="mailto:info@serenesea.in" class="text-gray-400 hover:text-white transition">info@serenesea.in</a>
+    </li>
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3">
+    <i class="ri-mail-line text-secondary"></i>
+    </div>
+    <a href="mailto:cs@serenesea.in" class="text-gray-400 hover:text-white transition">cs@serenesea.in</a>
+    </li>
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3">
+    <i class="ri-time-line text-secondary"></i>
+    </div>
+    <span class="text-gray-400">MON - SAT 7:00 A.M - 12:00 P.M</span>
+    </li>
+    </ul>
+    </div>
+   
+    </div>
+    </div>
+    </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuButton = document.querySelector('button');
+            const nav = document.querySelector('nav');
+            
+            menuButton.addEventListener('click', function() {
+                nav.classList.toggle('hidden');
+                nav.classList.toggle('flex');
+                nav.classList.toggle('flex-col');
+                nav.classList.toggle('absolute');
+                nav.classList.toggle('top-16');
+                nav.classList.toggle('right-4');
+                nav.classList.toggle('bg-white');
+                nav.classList.toggle('shadow-lg');
+                nav.classList.toggle('p-4');
+                nav.classList.toggle('rounded');
+                nav.classList.toggle('z-50');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const industryFilter = document.getElementById('industry-filter');
+            const cargoFilter = document.getElementById('cargo-filter');
+            const regionFilter = document.getElementById('region-filter');
+            const clearFiltersBtn = document.getElementById('clear-filters');
+            const resultCount = document.getElementById('result-count');
+            const caseStudies = document.querySelectorAll('.case-study-card');
+            
+            function applyFilters() {
+                const selectedIndustry = industryFilter.value;
+                const selectedCargo = cargoFilter.value;
+                const selectedRegion = regionFilter.value;
+                
+                let visibleCount = 0;
+                
+                caseStudies.forEach(card => {
+                    const industry = card.getAttribute('data-industry');
+                    const cargo = card.getAttribute('data-cargo');
+                    const region = card.getAttribute('data-region');
+                    
+                    const industryMatch = !selectedIndustry || industry === selectedIndustry;
+                    const cargoMatch = !selectedCargo || cargo === selectedCargo;
+                    const regionMatch = !selectedRegion || region === selectedRegion;
+                    
+                    if (industryMatch && cargoMatch && regionMatch) {
+                        card.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+                
+                resultCount.textContent = visibleCount;
+            }
+            
+            industryFilter.addEventListener('change', applyFilters);
+            cargoFilter.addEventListener('change', applyFilters);
+            regionFilter.addEventListener('change', applyFilters);
+            
+            clearFiltersBtn.addEventListener('click', function() {
+                industryFilter.value = '';
+                cargoFilter.value = '';
+                regionFilter.value = '';
+                applyFilters();
+            });
+            
+            // Initialize count
+            resultCount.textContent = caseStudies.length;
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Modal functionality
+            const modal = document.getElementById('case-study-modal');
+            const modalContent = document.getElementById('modal-content');
+            const closeModal = document.getElementById('close-modal');
+            const viewDetailsBtns = document.querySelectorAll('.view-details-btn');
+            
+            const caseStudiesData = [
+                {
+                    id: 1,
+                    title: "Wind Turbine Blade Transport",
+                    industry: "Renewable Energy",
+                    images: [
+                        "https://readdy.ai/api/search-image?query=large%2520industrial%2520wind%2520turbine%2520blades%2520being%2520transported%2520on%2520specialized%2520cargo%2520ship%252C%2520professional%2520maritime%2520logistics%252C%2520clear%2520blue%2520sky%252C%2520industrial%2520scale%2520equipment%252C%2520high-quality%2520photography&width=800&height=500&seq=2&orientation=landscape",
+                        "https://readdy.ai/api/search-image?query=wind%2520turbine%2520blades%2520being%2520loaded%2520onto%2520specialized%2520vessel%252C%2520close-up%2520of%2520loading%2520operation%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520high-quality%2520photography&width=800&height=500&seq=16&orientation=landscape",
+                        "https://readdy.ai/api/search-image?query=wind%2520turbine%2520blades%2520secured%2520on%2520vessel%2520deck%252C%2520aerial%2520view%2520of%2520transport%2520operation%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520high-quality%2520photography&width=800&height=500&seq=17&orientation=landscape"
+                    ],
+                    description: "This project involved the transportation of 24 wind turbine blades, each measuring 85 meters in length, from a manufacturing facility in Denmark to an offshore wind farm installation site in the North Sea. The blades required specialized handling due to their extreme length, fragility, and aerodynamic properties that make them susceptible to wind forces during transport.",
+                    challenges: [
+                        "Extreme length of cargo requiring specialized vessels and handling equipment",
+                        "Weather sensitivity during loading, transport, and offloading operations",
+                        "Tight delivery schedule to coordinate with installation vessel availability",
+                        "Need for custom securing systems to prevent damage during sea transport"
+                    ],
+                    solution: "Our team deployed a purpose-built blade carrier vessel equipped with adjustable support frames and sophisticated monitoring systems. We developed a comprehensive transport plan that included detailed weather routing, custom securing arrangements, and contingency planning for various scenarios. The operation was executed in three separate voyages, with each voyage delivering 8 blades to the offshore installation vessel.",
+                    specs: {
+                        "Cargo": "24 wind turbine blades",
+                        "Weight": "35 tons per blade",
+                        "Dimensions": "85m × 4.5m × 3m each",
+                        "Transport Distance": "450 nautical miles",
+                        "Vessel Type": "Specialized blade carrier",
+                        "Project Duration": "45 days"
+                    },
+                    testimonial: {
+                        text: "Serene Sea Shipping demonstrated exceptional expertise in handling our oversized wind turbine components. Their meticulous planning and execution ensured our project timeline was maintained despite challenging weather conditions. Their team's professionalism and communication throughout the process gave us complete confidence.",
+                        author: "Henrik Jorgensen",
+                        position: "Project Director, NorthWind Energy"
+                    },
+                    completion: "March 2025",
+                    location: "North Sea, Europe"
+                },
+                {
+                    id: 2,
+                    title: "Refinery Reactor Vessel Transport",
+                    industry: "Oil & Gas",
+                    images: [
+                        "https://readdy.ai/api/search-image?query=massive%2520oil%2520refinery%2520equipment%2520being%2520loaded%2520onto%2520specialized%2520cargo%2520vessel%252C%2520industrial%2520cranes%252C%2520professional%2520maritime%2520logistics%252C%2520clear%2520day%252C%2520high-quality%2520photography&width=800&height=500&seq=3&orientation=landscape",
+                        "https://readdy.ai/api/search-image?query=oil%2520refinery%2520reactor%2520vessel%2520secured%2520on%2520heavy-lift%2520vessel%252C%2520close-up%2520of%2520securing%2520operation%252C%2520professional%2520maritime%2520logistics%252C%2520industrial%2520scale%2520equipment%252C%2520high-quality%2520photography&width=800&height=500&seq=18&orientation=landscape",
+                        "https://readdy.ai/api/search-image?query=oil%2520refinery%2520reactor%2520vessel%2520being%2520offloaded%2520at%2520destination%2520port%252C%2520industrial%2520cranes%252C%2520professional%2520maritime%2520logistics%252C%2520high-quality%2520photography&width=800&height=500&seq=19&orientation=landscape"
+                    ],
+                    description: "This project involved the transportation of two 450-ton refinery reactor vessels from a manufacturing facility in South Korea to a new refinery complex in the Arabian Gulf. The reactors were critical components for the client's hydrocracking unit and required precise handling and specialized heavy-lift capabilities.",
+                    challenges: [
+                        "Extreme weight and dimensions requiring specialized heavy-lift vessels",
+                        "Complex loading and discharge operations at both ports",
+                        "Need for custom-designed cradles and securing systems",
+                        "Critical timeline to align with overall refinery construction schedule",
+                        "High-value cargo requiring comprehensive risk management"
+                    ],
+                    solution: "We deployed a specialized heavy-lift vessel with 800-ton crane capacity and developed custom cradles to support the reactors during transport. Our engineering team conducted detailed structural analyses to ensure vessel stability and cargo security throughout the voyage. We coordinated with port authorities at both ends to arrange necessary permits and prepare specialized berths for the loading and discharge operations.",
+                    specs: {
+                        "Cargo": "2 refinery reactor vessels",
+                        "Weight": "450 tons each",
+                        "Dimensions": "42m × 8m × 9m each",
+                        "Transport Distance": "6,800 nautical miles",
+                        "Vessel Type": "Heavy-lift vessel with 800-ton crane capacity",
+                        "Project Duration": "75 days"
+                    },
+                    testimonial: {
+                        text: "The transportation of our reactor vessels was executed flawlessly by Serene Sea Shipping. Their technical expertise in handling such massive components was evident throughout the project. The detailed planning and risk mitigation strategies they implemented gave us complete confidence in their ability to deliver these critical items safely and on schedule.",
+                        author: "Mohammed Al-Farsi",
+                        position: "Senior Project Manager, Gulf Refining Corporation"
+                    },
+                    completion: "January 2025",
+                    location: "Arabian Gulf"
+                },
+                // Additional case studies would be defined here
+            ];
+            
+            function openModal(caseStudyId) {
+                const caseStudy = caseStudiesData.find(cs => cs.id === parseInt(caseStudyId));
+                
+                if (!caseStudy) {
+                    // If case study data not found, use a template with placeholder data
+                    const cardElement = document.querySelector(`.view-details-btn[data-id="${caseStudyId}"]`).closest('.case-study-card');
+                    const title = cardElement.querySelector('h3').textContent;
+                    const description = cardElement.querySelector('p').textContent;
+                    const imgSrc = cardElement.querySelector('img').src;
+                    const location = cardElement.querySelector('.flex:nth-child(3) span').textContent;
+                    const completion = cardElement.querySelector('.flex:nth-child(4) span').textContent;
+                    const weight = cardElement.querySelector('.flex:nth-child(1) span').textContent;
+                    const dimensions = cardElement.querySelector('.flex:nth-child(2) span').textContent;
+                    
+                    const industryTag = cardElement.querySelector('.absolute span').textContent;
+                    
+                    modalContent.innerHTML = `
+                        <div class="mb-6">
+                            <div class="relative h-80 mb-4 rounded overflow-hidden">
+                                <img src="${imgSrc}" alt="${title}" class="w-full h-full object-cover object-top">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <span class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded mb-3">${industryTag}</span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">${title}</h2>
+                            <p class="text-gray-700 mb-6">${description}</p>
+                            
+                            <div class="mb-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Project Challenges</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                    <li>Extreme weight and dimensions requiring specialized transport solutions</li>
+                                    <li>Complex loading and discharge operations at both origin and destination</li>
+                                    <li>Weather sensitivity during critical phases of the operation</li>
+                                    <li>Tight delivery schedule to coordinate with other project components</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Our Solution</h3>
+                                <p class="text-gray-700">Our team developed a comprehensive transport solution that addressed all project challenges. We deployed specialized equipment and experienced personnel to ensure safe and efficient handling of the cargo. Detailed planning and risk assessment were conducted to anticipate and mitigate potential issues throughout the operation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Technical Specifications</h3>
+                            <div class="bg-gray-50 rounded p-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Weight</p>
+                                        <p class="font-medium">${weight}</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500">Dimensions</p>
+                                        <p class="font-medium">${dimensions}</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500">Location</p>
+                                        <p class="font-medium">${location}</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500">Completion Date</p>
+                                        <p class="font-medium">${completion}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Client Testimonial</h3>
+                            <div class="bg-gray-50 rounded p-4 italic">
+                                <p class="text-gray-700 mb-3">"Serene Sea Shipping demonstrated exceptional expertise in handling our specialized cargo. Their meticulous planning and execution ensured our project timeline was maintained despite challenging conditions. We would highly recommend their services for complex project cargo requirements."</p>
+                                <p class="font-medium">- Project Director</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Related Case Studies</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-gray-50 rounded p-3">
+                                    <p class="font-medium text-primary hover:underline cursor-pointer">Wind Turbine Blade Transport</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-3">
+                                    <p class="font-medium text-primary hover:underline cursor-pointer">Gas Turbine Generator Transport</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-3">
+                                    <p class="font-medium text-primary hover:underline cursor-pointer">Bridge Section Transport</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // Use the actual case study data
+                    let imagesHTML = '';
+                    caseStudy.images.forEach(img => {
+                        imagesHTML += `<div class="h-80 rounded overflow-hidden"><img src="${img}" alt="${caseStudy.title}" class="w-full h-full object-cover object-top"></div>`;
+                    });
+                    
+                    let challengesHTML = '';
+                    caseStudy.challenges.forEach(challenge => {
+                        challengesHTML += `<li>${challenge}</li>`;
+                    });
+                    
+                    let specsHTML = '';
+                    for (const [key, value] of Object.entries(caseStudy.specs)) {
+                        specsHTML += `
+                            <div>
+                                <p class="text-sm text-gray-500">${key}</p>
+                                <p class="font-medium">${value}</p>
+                            </div>
+                        `;
+                    }
+                    
+                    modalContent.innerHTML = `
+                        <div class="mb-6">
+                            <div class="relative h-80 mb-4 rounded overflow-hidden">
+                                <img src="${caseStudy.images[0]}" alt="${caseStudy.title}" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="grid grid-cols-3 gap-2">
+                                ${caseStudy.images.slice(1).map(img => `
+                                    <div class="h-24 rounded overflow-hidden cursor-pointer hover:opacity-90 transition">
+                                        <img src="${img}" alt="${caseStudy.title}" class="w-full h-full object-cover object-top">
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <span class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded mb-3">${caseStudy.industry}</span>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">${caseStudy.title}</h2>
+                            <p class="text-gray-700 mb-6">${caseStudy.description}</p>
+                            
+                            <div class="mb-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Project Challenges</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                    ${challengesHTML}
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Our Solution</h3>
+                                <p class="text-gray-700">${caseStudy.solution}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Technical Specifications</h3>
+                            <div class="bg-gray-50 rounded p-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    ${specsHTML}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        ${caseStudy.testimonial ? `
+                            <div class="mb-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Client Testimonial</h3>
+                                <div class="bg-gray-50 rounded p-4 italic">
+                                    <p class="text-gray-700 mb-3">"${caseStudy.testimonial.text}"</p>
+                                    <p class="font-medium">- ${caseStudy.testimonial.author}, ${caseStudy.testimonial.position}</p>
+                                </div>
+                            </div>
+                        ` : ''}
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Related Case Studies</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-gray-50 rounded p-3">
+                                    <p class="font-medium text-primary hover:underline cursor-pointer">Wind Turbine Blade Transport</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-3">
+                                    <p class="font-medium text-primary hover:underline cursor-pointer">Gas Turbine Generator Transport</p>
+                                </div>
+                                <div class="bg-gray-50 rounded p-3">
+                                    <p class="font-medium text-primary hover:underline cursor-pointer">Bridge Section Transport</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeModalFunc() {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            
+            viewDetailsBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const caseStudyId = this.getAttribute('data-id');
+                    openModal(caseStudyId);
+                });
+            });
+            
+            closeModal.addEventListener('click', closeModalFunc);
+            
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModalFunc();
+                }
+            });
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModalFunc();
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load More functionality
+            const loadMoreBtn = document.getElementById('load-more');
+            
+            loadMoreBtn.addEventListener('click', function() {
+                // In a real implementation, this would load more case studies
+                // For this demo, we'll just hide the button
+                this.textContent = 'No More Case Studies';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize charts
+            const industryChart = echarts.init(document.getElementById('industry-chart'));
+            const regionChart = echarts.init(document.getElementById('region-chart'));
+            
+            // Industry chart options
+            const industryOption = {
+                animation: false,
+                tooltip: {
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    borderColor: '#f0f0f0',
+                    textStyle: {
+                        color: '#1f2937'
+                    }
+                },
+                legend: {
+                    orient: 'vertical',
+                    right: 10,
+                    top: 'center',
+                    textStyle: {
+                        color: '#1f2937'
+                    }
+                },
+                series: [
+                    {
+                        name: 'Project Cargo Volume',
+                        type: 'pie',
+                        radius: ['40%', '70%'],
+                        avoidLabelOverlap: false,
+                        itemStyle: {
+                            borderRadius: 8,
+                            borderColor: '#fff',
+                            borderWidth: 2
+                        },
+                        label: {
+                            show: false
+                        },
+                        emphasis: {
+                            label: {
+                                show: true,
+                                fontSize: '14',
+                                fontWeight: 'bold'
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        },
+                        data: [
+                            { value: 35, name: 'Renewable Energy', itemStyle: { color: 'rgba(87, 181, 231, 1)' } },
+                            { value: 30, name: 'Oil & Gas', itemStyle: { color: 'rgba(141, 211, 199, 1)' } },
+                            { value: 15, name: 'Power Generation', itemStyle: { color: 'rgba(251, 191, 114, 1)' } },
+                            { value: 12, name: 'Mining & Metals', itemStyle: { color: 'rgba(252, 141, 98, 1)' } },
+                            { value: 8, name: 'Infrastructure', itemStyle: { color: 'rgba(179, 179, 179, 1)' } }
+                        ]
+                    }
+                ]
+            };
+            
+            // Region chart options
+            const regionOption = {
+                animation: false,
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    borderColor: '#f0f0f0',
+                    textStyle: {
+                        color: '#1f2937'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['Asia', 'Europe', 'Americas', 'Middle East', 'Africa'],
+                    axisLine: {
+                        lineStyle: {
+                            color: '#d1d5db'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#1f2937'
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: 'Shipments',
+                    nameTextStyle: {
+                        color: '#1f2937'
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#d1d5db'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#1f2937'
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: '#f3f4f6'
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: 'Project Cargo Shipments',
+                        type: 'bar',
+                        data: [85, 72, 64, 48, 31],
+                        itemStyle: {
+                            color: 'rgba(87, 181, 231, 1)',
+                            borderRadius: 4
+                        }
+                    }
+                ]
+            };
+            
+            // Set chart options
+            industryChart.setOption(industryOption);
+            regionChart.setOption(regionOption);
+            
+            // Resize charts when window size changes
+            window.addEventListener('resize', function() {
+                industryChart.resize();
+                regionChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>
